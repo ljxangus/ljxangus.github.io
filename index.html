@@ -155,12 +155,12 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                2
+                3
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                1
-                <span>tag</span>
+                3
+                <span>tags</span>
             </div>
         </div>
         
@@ -208,6 +208,138 @@
 
             
             <section id="main">
+    <article id="post-A-note-on-the-GNURadio" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/04/24/A-note-on-the-GNURadio/">A note on the GNURadio</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/04/24/A-note-on-the-GNURadio/">
+            <time datetime="2018-04-24T07:13:00.000Z" itemprop="datePublished">2018-04-24</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Tech/">Tech</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/GNURadio/">GNURadio</a>, <a class="tag-link" href="/tags/Tech/">Tech</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>接下来我会开始写一写这两年来在·GNURadio·开发方面的一些简单教程和个人简介。虽然这是一个很小众的<br>领域但是自己积累下来的经验是希望可以多分享一些，这样也有利于之后自己回顾以往做过的一些开发流程。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://ljxangus.github.io/2018/04/24/A-note-on-the-GNURadio/" data-id="cjgdc56970000rq11q2wkhll8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://ljxangus.github.io/2018/04/24/A-note-on-the-GNURadio/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://ljxangus.github.io/2018/04/24/A-note-on-the-GNURadio/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-first-post" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -232,6 +364,11 @@
 
 
                         
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Life/">Life</a>
+    </div>
+
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
@@ -265,7 +402,7 @@
 
 </div>
 
-    <a data-url="http://ljxangus.github.io/2018/04/23/first-post/" data-id="cjgc9yqa80001w864k8bspu8g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://ljxangus.github.io/2018/04/23/first-post/" data-id="cjgdc569c0002rq110elnwkbg" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -361,7 +498,7 @@
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2018/04/20/hello-world/">
-            <time datetime="2018-04-20T10:05:23.702Z" itemprop="datePublished">2018-04-20</time>
+            <time datetime="2018-04-20T04:15:14.000Z" itemprop="datePublished">2018-04-20</time>
         </a>
     </div>
 
@@ -395,7 +532,7 @@
 
 </div>
 
-    <a data-url="http://ljxangus.github.io/2018/04/20/hello-world/" data-id="cjgc9xn430000tu64jqcfycii" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://ljxangus.github.io/2018/04/20/hello-world/" data-id="cjgdc569g0004rq11j3h6eifa" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -486,6 +623,25 @@
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2018/04/24/A-note-on-the-GNURadio/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Tech/">Tech</a></p>
+                            <p class="item-title"><a href="/2018/04/24/A-note-on-the-GNURadio/" class="title">A note on the GNURadio</a></p>
+                            <p class="item-date"><time datetime="2018-04-24T07:13:00.000Z" itemprop="datePublished">2018-04-24</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2018/04/23/first-post/" class="thumbnail">
     
     
@@ -496,7 +652,7 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/Life/">Life</a></p>
                             <p class="item-title"><a href="/2018/04/23/first-post/" class="title">My first post</a></p>
                             <p class="item-date"><time datetime="2018-04-23T12:35:49.000Z" itemprop="datePublished">2018-04-23</time></p>
                         </div>
@@ -517,7 +673,7 @@
                         <div class="item-inner">
                             <p class="item-category"></p>
                             <p class="item-title"><a href="/2018/04/20/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2018-04-20T10:05:23.702Z" itemprop="datePublished">2018-04-20</time></p>
+                            <p class="item-date"><time datetime="2018-04-20T04:15:14.000Z" itemprop="datePublished">2018-04-20</time></p>
                         </div>
                     </li>
                 
@@ -527,12 +683,19 @@
 
     
         
+    <div class="widget-wrap">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Life/">Life</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tech/">Tech</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
     
         
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -541,7 +704,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Life/">Life</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GNURadio/">GNURadio</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Life/">Life</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tech/">Tech</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -550,7 +713,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Life/" style="font-size: 10px;">Life</a>
+            <a href="/tags/GNURadio/" style="font-size: 10px;">GNURadio</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Tech/" style="font-size: 10px;">Tech</a>
         </div>
     </div>
 
