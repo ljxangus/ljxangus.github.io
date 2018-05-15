@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Jiaxin Liang Blog</title>
+    <title>Multithread synchronization in Python | Jiaxin Liang Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="keywords" content="Programming, Wireless, SDR">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jiaxin Liang Blog">
-<meta property="og:url" content="http://ljxangus.github.io/index.html">
+    <meta name="description" content="最近在开发 TS System 的时候经常会遇到 Multithread 的 同步问题，尤其是在 TDM, FDM 多路接入的时候情况突出。于是在网上搜素了一下关于 Multithread Synchronization 的编程技巧，找到一篇不错的教材。  https://hackernoon.com/synchronization-primitives-in-python-564f89fee73">
+<meta name="keywords" content="Tech">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Multithread synchronization in Python">
+<meta property="og:url" content="http://ljxangus.github.io/2018/05/16/Multithread-synchronization-in-Python/index.html">
 <meta property="og:site_name" content="Jiaxin Liang Blog">
+<meta property="og:description" content="最近在开发 TS System 的时候经常会遇到 Multithread 的 同步问题，尤其是在 TDM, FDM 多路接入的时候情况突出。于是在网上搜素了一下关于 Multithread Synchronization 的编程技巧，找到一篇不错的教材。  https://hackernoon.com/synchronization-primitives-in-python-564f89fee73">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-05-15T18:15:20.968Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jiaxin Liang Blog">
+<meta name="twitter:title" content="Multithread synchronization in Python">
+<meta name="twitter:description" content="最近在开发 TS System 的时候经常会遇到 Multithread 的 同步问题，尤其是在 TDM, FDM 多路接入的时候情况突出。于是在网上搜素了一下关于 Multithread Synchronization 的编程技巧，找到一篇不错的教材。  https://hackernoon.com/synchronization-primitives-in-python-564f89fee73">
     
 
     
@@ -207,16 +211,15 @@
 </aside>
 
             
-            <section id="main">
-    <article id="post-Multithread-synchronization-in-Python" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-Multithread-synchronization-in-Python" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
             <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/05/16/Multithread-synchronization-in-Python/">Multithread synchronization in Python</a>
+        <h1 class="article-title" itemprop="name">
+            Multithread synchronization in Python
         </h1>
     
 
@@ -366,555 +369,30 @@
         </footer>
     </div>
     
-</article>
-
-
-
-    <article id="post-IPFS-related" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
         
-        
-            <header class="article-header">
-                
+<nav id="article-nav">
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/05/11/IPFS-related/">IPFS related</a>
-        </h1>
     
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/05/11/IPFS-related/">
-            <time datetime="2018-05-11T02:58:21.000Z" itemprop="datePublished">2018-05-11</time>
+        <a href="/2018/05/11/IPFS-related/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">IPFS related</div>
         </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Tech/">Tech</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Decentralization/">Decentralization</a>, <a class="tag-link" href="/tags/Tech/">Tech</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>最近接触上了 IPFS，全称是 <em>InterPlanetary File System</em> （星际文件系统）<a href="https://zh.wikipedia.org/wiki/%E6%98%9F%E9%99%85%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F" target="_blank" rel="noopener">[on Wiki]</a>,<a href="https://ipfs.io/" target="_blank" rel="noopener">[Official site]</a>。它的目标是创立一个全球共用的文件储存机制，利用区块链以及分布式储存的技术来搭建。愿景是十分远大而美好的。</p>
-<p>现有的已经能够触及的应用是类似 Dropbox 的远程储存以及 HTTP协议代替方案。拥有潜力对应用层的所有涉及储存的机制进行革新。最近我自己也在翻译相关的文档以及进行相关知识的学习。有兴趣的可以在讨论区对这项技术的潜力和能够做的事情进行探讨。</p>
-<p>虽不说这项技术是否一定会成功，但是在网络层及以上已经不常能够出现类似的新事物了。所以我自己也会花一些时间在这上面进行探究。稍后会更新一些相关的 paper 以及项目。 </p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://ljxangus.github.io/2018/05/11/IPFS-related/" data-id="cjh7zvvc40002yd11pslh39os" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
     
-        <a href="http://ljxangus.github.io/2018/05/11/IPFS-related/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://ljxangus.github.io/2018/05/11/IPFS-related/">Comments</a>
-    
+</nav>
 
-        </footer>
-    </div>
+
     
 </article>
 
 
-
-    <article id="post-A-note-on-the-GNURadio" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/04/24/A-note-on-the-GNURadio/">A note on the GNURadio</a>
-        </h1>
     
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/04/24/A-note-on-the-GNURadio/">
-            <time datetime="2018-04-24T07:13:00.000Z" itemprop="datePublished">2018-04-24</time>
-        </a>
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Tech/">Tech</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/GNURadio/">GNURadio</a>, <a class="tag-link" href="/tags/Tech/">Tech</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>接下来我会开始写一写这两年来在·GNURadio·开发方面的一些简单教程和个人简介。虽然这是一个很小众的<br>领域但是自己积累下来的经验是希望可以多分享一些，这样也有利于之后自己回顾以往做过的一些开发流程。</p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>从很早之前开始就已经在和 GNUradio 打交道了，但是很长的时间里面，我都是从来不敢动底层部件（如 C++ block)<br>或者是其他相关的代码操作。只会利用已有的·PHY层·部件进行拼凑用以对·MAC层·进行设计。</p>
-<p>但是自从 DARPA 的比赛开始，我就不得不把重心转移到了对底层模块进行操作的方向上来。一方面是因为，<br>原来已有的部件局限性太大，对系统的性能的制约也很明显。并且以为 PHY层内部的部件的各种开发时的随意性，导致我们在使用时也出现诸多的不便，即便只是参数的更改有时候也会是大费周章。</p>
-<p>记得一个比较简单但是深刻的例子就是，当我们在对原先的 PNC 系统 进行修改的时候，便发现原系统的 bitrate（详细定义可参考 802.11a 的 bitrate 的定义）并不能随意更改。一旦 bitrate $x \leq 2$ 的时候，便会出现某个 IO 的 size 不对的情况。但比较让人觉得可怕的地方是，程序并不会因此报错而停止，而是输出包解码错误。如果只从现象来观察，很容易会得出<em>信道质量太差</em>或者<em>硬件出了问题</em>的结论。<br>后来几经波折才发现，出现问题的是因为某个内部 PHY层 的处理模块的输出输入口不按照原先的定义进行输出，粗略一点来讲便是<em>IO口的 Size 不对</em>。</p>
-<p>从上面的经历得出的结论便是，如果我们想进一步提高系统性能的时候，出来更改MAC层的基本设计，还需要多关注PHY层的代码实现。很多时候PHY层的代码实现会十分明显地影响系统的整体性能。</p>
-<p>以下我先描述几个细节点：</p>
-<ul>
-<li>GNURadio 和 USRP 之间的时间关系</li>
-<li>参数传递</li>
-<li>通信系统接收端的响应方式</li>
-</ul>
-<h2 id="处理-GNURadio-和-USRP-之间的时间关系"><a href="#处理-GNURadio-和-USRP-之间的时间关系" class="headerlink" title="处理 GNURadio 和 USRP 之间的时间关系"></a>处理 GNURadio 和 USRP 之间的时间关系</h2><p>##</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://ljxangus.github.io/2018/04/24/A-note-on-the-GNURadio/" data-id="cjh7zvvca0006yd11pbdty21x" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
+</section>
     
-        <a href="http://ljxangus.github.io/2018/04/24/A-note-on-the-GNURadio/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://ljxangus.github.io/2018/04/24/A-note-on-the-GNURadio/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-first-post" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/04/23/first-post/">My first post</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/04/23/first-post/">
-            <time datetime="2018-04-23T12:35:49.000Z" itemprop="datePublished">2018-04-23</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Life/">Life</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Life/">Life</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>这是我在Github主页上的第一篇 post！</p>
-<p>其实在很早很早以前我就已经尝试了在 Github 上面搭建个人主页。曾经尝试过最简单的 <code>Bootstrap</code>模板，也尝试过其他的 Github 模板，但是苦于 Github 上面只能存放静态页面，大规模地修改内容以及对内容进行管理的时候并不能够很好地进行，遂放弃。</p>
-<p>最近看到 <code>Hexo</code> 的介绍发现这个轻量级的blog搭建平台甚是符合一个码农对blog post搭建的需求，既有 <code>CMS</code> 的基本功能，同时又有线下生成快速部署线上的功能。同时颜值和扩展性都不错。决定尝试一下。</p>
-<p>以下推荐两篇快速部署 Hexo 的教程：</p>
-<ul>
-<li><a href="https://github.com/limedroid/HexoLearning" target="_blank" rel="noopener">Hexo Learning</a></li>
-<li><a href="http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/" target="_blank" rel="noopener">使用 Hexo 为自己在 Github 上建一个静态 Blog 站点</a></li>
-</ul>
-<p>之后会考虑为网站添加 <code>Tags</code> 和 <code>Catagory</code> 还有 评论功能。</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://ljxangus.github.io/2018/04/23/first-post/" data-id="cjh7zvvcb0007yd11sparult3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://ljxangus.github.io/2018/04/23/first-post/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://ljxangus.github.io/2018/04/23/first-post/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/04/20/hello-world/">Hello World</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/04/20/hello-world/">
-            <time datetime="2018-04-20T04:15:14.000Z" itemprop="datePublished">2018-04-20</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://ljxangus.github.io/2018/04/20/hello-world/" data-id="cjh7zvvcc0008yd11dmit40oj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://ljxangus.github.io/2018/04/20/hello-world/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://ljxangus.github.io/2018/04/20/hello-world/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
 
 </section>
             
@@ -1097,11 +575,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = '';
+            this.page.url = 'http://ljxangus.github.io/2018/05/16/Multithread-synchronization-in-Python/';
+        
+        this.page.identifier = 'Multithread-synchronization-in-Python';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'ljxangus-git' + '.disqus.com/count.js';
+        s.src = '//' + 'ljxangus-git' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
