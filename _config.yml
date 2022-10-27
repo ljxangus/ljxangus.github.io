@@ -52,7 +52,7 @@ twitter-widget: false # true,false                  # Used to show your twitter 
 
 comments: true                                     # Used to enable comments on blog posts
 gitalk_client_id: "f01e267ad6f315eae78d"
-gitalk_client_secret: "3ba6c818cacbdcd8d108af4b6cfed500387fc77d"
+gitalk_client_secret: "02a89cfeca15b1cadb725ec3199807ef36b8c374"
 gitalk_repo: "ljxangus.github.io"
 gitalk_owner: "ljxangus"
 gitalk_admin: "ljxangus"
