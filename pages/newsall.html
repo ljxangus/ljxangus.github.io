@@ -1,0 +1,25 @@
+---
+title: "News"
+layout: page
+permalink: news.html
+---
+
+{% assign theme = site.data.themes[site.ui_theme] %}
+<div class="blogcard  card-1 mb-4" style="width: 100%;">
+  <div class="card-body">
+    <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
+  </div>
+</div>
+
+{% for information in site.data.news %}
+<div class="card bg-light mb-3" style="width: 100%;">
+  <div class="card-header" style="font-size: medium;font-weight:{{ theme.post-font-weight }};">{{ information.date }}</div>
+  <div class="card-body">
+    <p class="card-text">{{ information.headline }}</p>
+    {% if information.link %}
+      <a class="btn btn-primary" href="{{ information.link }}" role="button" style="color: azure;">Read more</a>
+    {% endif %}
+  </div>
+</div>
+
+{% endfor %}

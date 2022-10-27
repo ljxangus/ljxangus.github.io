@@ -1,0 +1,32 @@
+- date: November, 2021
+  headline: I have joined Huawei @ 2021. Started a new chapter of my career!
+
+- date: August 25, 2021
+  headline: We have implemented an ultra realiable OFDMA systems on SDR platform called ROFA. A paper entitle "ROFA&#58; An OFDMA system for Ultra-Reliable Wireless Industrial Networking" has been submitted to a possible journal. The code will be open-sourced soon.
+  link: https://arxiv.org/abs/2109.00979
+
+- date: December 19, 2020
+  headline: Our paper <a href="https://ieeexplore.ieee.org/abstract/document/9296962/" class="highlighted">"Is Multichannel Access Useful for Timely Information Update?"</a> has been accepted and will be appeared on Wireless Communication Letter (WCL).
+
+- date: September 20, 2020
+  headline: Our paper <a href="https://ieeexplore.ieee.org/abstract/document/9200657/" class="highlighted">"Practical NOMA-Based Coordinated Direct and Relay Transmission"</a> has been accepted and has been appeared on Wireless Communication Letter (WCL).
+
+- date: July 15, 2020
+  headline: Our paper <a href="#" class="highlighted">"Software-defined radio implementation of age-of-information-oriented random access"</a> has been accepted by IECON!
+  link: https://ieeexplore.ieee.org/abstract/document/9254614/
+
+- date: July 2, 2020
+  headline: Our paper <a href="https://ieeexplore.ieee.org/abstract/document/9130084/" class="highlighted">"Timely information update with nonorthogonal multiple access"</a> has been accepted and has been appeared on Transactions of Industrial Informatics (TII).
+
+- date: June 17, 2020
+  headline: Our paper <a href="https://arxiv.org/abs/2006.09970" class="highlighted">"Design and Implementation of Time-Sensitive Wireless IoT Networks on Software-Defined Radio"</a> has been appeared on Arxiv. The code of the program will be open-sourced soon.
+  link: https://ieeexplore.ieee.org/document/9480604
+
+- date: November 20, 2018
+  headline: "Our team AI-PACA have been qualified to the Preliminary Event #2 SC2 again."
+
+- date: July 26, 2018
+  headline: Our paper <a href="https://ieeexplore.ieee.org/abstract/document/8432498/" class="highlighted">Network-Coded Multiple Access on Unmanned Aerial Vehicle</a> got accepted by JSAC.
+
+- date: November 30, 2017
+  headline: "Our team AI-PACA have been qualified to the Preliminary Event #1 (PE1) in DARPA SC2 competition. Competition will be held in Johns Hopkins Applied Physics Lab, Laurel, MD."

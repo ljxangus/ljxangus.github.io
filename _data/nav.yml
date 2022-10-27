@@ -1,0 +1,20 @@
+nav_list_title: Navigation List
+links:
+
+- title: Blog
+  url: blog.html
+
+# - title: Home
+#   url: index.html
+
+- title: Bio
+  url: bio.html
+
+- title: Publications
+  url: publications.html
+
+- title: Projects
+  url: projects.html
+
+- title: News
+  url: news.html

@@ -1,0 +1,105 @@
+- title: "ROFA: An OFDMA system for Ultra-Reliable Wireless Industrial Networking"
+  author: "<em><b>J. Liang</b></em>, and S. C. Liew"
+  source: arXiv preprint arXiv:2109.00979, submitted to IEEE Transactions on Mobile Computing <b>(TMC)</b>
+  type: journal
+  pdf: "https://arxiv.org/pdf/2109.00979"
+  html: "https://arxiv.org/abs/2109.00979"
+  showFront: 1
+
+- author: "<b>J. Liang</b>, H. Chen and S. C. Liew"
+  title: "Design and Implementation ofTime-Sensitive Wireless IoT Networks on Software-Defined Radio" 
+  source: IEEE Internet of Things Journal <b>(IoTJ)</b>, July 2021 (early access)
+  type: journal
+  pdf: "https://arxiv.org/pdf/2006.09970"
+  html: "https://ieeexplore.ieee.org/document/9480604"
+  showFront: 1
+
+- author: "<b>J. Liang</b>, H. Pan and S. C. Liew"
+  title: "Is Multichannel Access Useful for Timely Information Update?" 
+  source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 4, pp. 815-819, April 2021
+  type: journal
+  pdf: "https://arxiv.org/pdf/2007.12136"
+  html: "https://ieeexplore.ieee.org/abstract/document/9296962/"
+  showFront: 1
+
+- author: "H. Pan, <b>J. Liang</b>, S. C. Liew, V. C. M. Leung and J. Li"
+  title: "Timely Information Update With Nonorthogonal Multiple Access" 
+  source: IEEE Transactions on Industrial Informatics <b>(TII)</b>, vol. 17, no. 6, pp. 4096-4106, June 2021
+  type: journal
+  pdf:
+  html: "https://ieeexplore.ieee.org/abstract/document/9130084/"
+  showFront: 1
+
+- author: "H. Pan, <b>J. Liang</b> and S. C. Liew"
+  title: "Practical NOMA-Based Coordinated Direct and Relay Transmission" 
+  source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 1, pp. 170-174, Jan. 2021
+  type: journal
+  pdf:
+  html: "https://ieeexplore.ieee.org/abstract/document/9200657/"
+  showFront: 1
+
+- author: "H. Pan, S. C. Liew, <b>J. Liang</b>, V. C. M. Leung and J. Li"
+  title: "Coding of Multi-Source Information Streams With Age of Information Requirements"
+  source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol. 39, no. 5, pp. 1427-1440, May 2021
+  type: journal
+  pdf:
+  html: "https://ieeexplore.ieee.org/abstract/document/9374436/"
+  showFront: 1
+
+- author: "Y. Shao, S. C. Liew and <b>J. Liang</b>"
+  title: "Sporadic Ultra-Time-Critical Crowd Messaging in V2X" 
+  source: IEEE Transactions on Communications <b>(TCom)</b>, vol. 69, no. 2, pp. 817-830, Feb. 2021
+  type: journal
+  pdf: "https://arxiv.org/pdf/2003.01906"
+  html: "https://ieeexplore.ieee.org/abstract/document/9257442/"
+
+- title: Network-coded multiple access on unmanned aerial vehicle
+  author: H. Pan, S.C. Liew, <b>J. Liang</b>, Y. Shao, L. Lu
+  source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol. 36, no. 9, pp. 2071-2086, Sept. 2018
+  type: journal
+  pdf:
+  html: "https://ieeexplore.ieee.org/abstract/document/8432498/"
+  showFront: 1
+
+- author: "T. -T. Chan, H. Pan and <b>J. Liang</b>"
+  title: "Age of Information with Joint Packet Coding in Industrial IoT"
+  source: IEEE Wireless Communications Letters <b>(WCL)</b> (early access)
+  type: journal
+  pdf:
+  html: "https://ieeexplore.ieee.org/abstract/document/9514592/"
+
+- author: Z. Han*, <b>J. Liang</b>*, Y. Gu and H. Chen
+  title: "Software-Defined Radio Implementation of Age-of-Information-Oriented Random Access"
+  source: 2020 The 46th Annual Conference of the IEEE Industrial Electronics Society <b>(IECON)</b>, 2020, pp. 4374-4379.
+  remark: "* Two authors have the same contributions"
+  type: conference
+  pdf: "https://arxiv.org/pdf/2003.14329"
+  html: "https://ieeexplore.ieee.org/abstract/document/9254614/"
+
+- author: Y. Shao, S. C. Liew and <b>J. Liang</b>
+  title: "Sporadic Ultra-Time-Critical Messaging in V2X"
+  source: 2018 IEEE International Conference on Communications <b>(ICC)</b>, 2018, pp. 1-7.
+  type: conference
+  pdf:
+  html: "https://ieeexplore.ieee.org/abstract/document/8422978/"
+
+- author: R. Y. Chan, C. K. Chan, M. Tahernia, <b>J. Liang</b> and Q. Cao, 
+  title: "Engineering Education for Sustainable Development and Global Citizenship: A Course-level Implementation Case in Hong Kong"
+  source: 2018 ASEE Annual Conference and Exposition.
+  type: conference
+  pdf:
+  html: "https://peer.asee.org/engineering-education-for-sustainable-development-and-global-citizenship-a-course-level-implementation-case-in-hong-kong"
+
+- author: R. Y. Chan, C. K. Chan, C. Lau, <b>J. Liang</b>, H. Huang, Q. Cao and M. Tahernia
+  title: "Direct evidence of engineering students' generic skills learning: From research to practice in an undergraduate course in information engineering"
+  source: 2017 IEEE Frontiers in Education Conference (FIE), 2017, pp. 1-5.
+  type: conference
+  pdf:
+  html: "https://ieeexplore.ieee.org/abstract/document/8190634/"
+
+- title:
+  author:
+  source:
+  type:
+  pdf:
+  html:

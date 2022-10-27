@@ -1,0 +1,88 @@
+- name: The DARPA Spectrum Collaboration Challenge (SC2)
+  id: sc2
+  description: >
+    <ul>
+    <li>It was the first-of-its-kind collaborative machine-learning competition to overcome scarcity in the radio frequency (RF) spectrum.</li>
+    <li>Built a real-time wireless system that leverage Artificial Intelligence to access the spectrum without interfering the other signals.</li>
+    <li>Cooperated with the research group from the North-Western University</li>
+    <li>Qualified for Preliminary Event 1 & 2 (PE1 & 2) and presented in the events hosted in Johns Hopkins University Applied Physics Laboratory.</li>
+    </ul>
+  date: true
+  link: https://www.darpa.mil/program/spectrum-collaboration-challenge
+  image:  https://www.darpa.mil/DDM_Gallery/sc2-619-316a.jpg
+  tech: 
+    - Software-define Radio
+    - Wireless System Design
+    - Signal Processing
+
+- name: Ultra-reliable OFDMA Systems for IIoT
+  id: rofa
+  description: >
+    TBD
+  link:
+  image: /assets/img/projects/rofa.png
+  tech: 
+    - Software-define Radio
+    - Wireless System Design
+    - Signal Processing 
+
+
+- name: Wireless Time-Sensitive Network (TSN) for IIoT
+  id: rtts-sdr
+  description: >
+    <ul>
+    <li>A real-time wireless system that is implemented on PC-USRP using GNURadio, targeting to provide TSN service to the upper layer with high accuracy synchronization.</li>
+    <li>Achieving synchronization among nodes to within 100ns, and the end-to-end latency can be down to 3.75ms.</li>
+    <li>Easy-deployable and reconfigurable for many other time-critical wireless applications.</li>
+    </ul>
+  date: true
+  link: http://wireless.ie.cuhk.edu.hk/rtts-sdr.html
+  image: http://wireless.ie.cuhk.edu.hk/images/respic/rtts_sdr.jpg
+  tech: 
+    - Software-define Radio
+    - Signal Processing
+    - Synchornization
+
+- name: Network-Coded Multiple Access on Unmanned Aerial Vehicle
+  id: nc-uav
+  description: >
+    <ul>
+    <li>Design and implement a wireless system running on the top of real Unmanned Aerial Vehicles.</li>
+    <li>Leveraging the Embeded USRP E310 to transmit and receive signals to evaluating the algorithm.</li>
+    </ul>
+  date: true
+  link:
+  image:  https://www.researchgate.net/profile/Mingzhe-Chen-2/publication/331195915/figure/fig1/AS:727867440787459@1550548529427/A-cellular-network-with-a-UAV-base-station.png
+  tech: 
+    - Software-define Radio
+    - Wireless System Design
+    - Signal Processing
+
+- name: A generic real-time Time-Slotted System on SDR
+  id: tdma-sdr
+  description: >
+    <ul>
+    <li>Built a full-stack time-slotted system based on Software-defined radio platform (USRP and GNURadio) that could be used to verify many MAC scheme (e.g. Coded Slotted Aloha, Physical-layer Network</li>
+    <li>Served as an implementation platform for several projects in our research groups.</li>
+    </ul>
+  date: true
+  link:
+  image: /assets/img/projects/tdma.png
+  tech: 
+    - Software-define Radio
+    - Wireless System Design
+
+- name: Design and implementation of high performance decoders for next generation wireless systems
+  id: pnc-decoder
+  description: >
+    <ul>
+    <li>Implemented a reduced-complexity convolutional decoder for Physical-layer Network Coding (PNC) in GNU Radio.</li>
+    <li>Built the first single-GPP based development environment for PNC with a video streaming demonstration.</li>
+    </ul>
+  date: true
+  link: http://wireless.ie.cuhk.edu.hk/rpnc.html
+  image: http://wireless.ie.cuhk.edu.hk/images/respic/pncRelay.png
+  tech: 
+    - Software-define Radio
+    - Wireless System Design
+    - Signal Processing

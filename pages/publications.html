@@ -1,0 +1,89 @@
+---
+layout: page
+permalink: /publications.html
+title: Publications
+header-img: 
+last-updated: 2020-10-30 5:55 PM
+---
+{% assign theme = site.data.themes[site.ui_theme] %}
+<div class="blogcard  card-1 mb-4" style="width: 100%;">
+  <div class="card-body">
+    <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
+  </div>
+</div>
+
+<h3><em>Journal</em></h3>
+<ul style="list-style: decimal;">
+{% for paper in site.data.publist %}
+  {% if paper.title and paper.type == "journal" %}
+    <li>
+      <div class="card border-0" style="width: 100%; padding-left: 5px; padding-top: 5px;">
+        <div class="title font-weight-bold">
+          {{paper.title}}
+        </div>
+        <div class="author">
+          {{paper.author}}
+        </div>
+        <div class="periodical">
+          <em>{{paper.source}}</em>
+        </div>
+        {% if paper.remark %}
+          <div class="periodical">
+            <em>Remark: {{paper.remark}}</em>
+          </div>
+        {% endif %}
+        <div class="links">
+          {% if paper.html %}
+            <a href="{{ paper.html }}" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          {% endif %}
+          {% if paper.pdf %}
+            {% if paper.pdf contains '://' %}
+            <a href="{{ paper.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            {% else %}
+            <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h3><em>Conference</em></h3>
+<ul style="list-style: decimal;">
+{% for paper in site.data.publist %}
+  {% if paper.title and paper.type == "conference" %}
+    <li>
+      <div class="card border-0" style="width: 100%; padding-left: 5px; padding-top: 5px;">
+        <div class="title font-weight-bold">
+          {{paper.title}}
+        </div>
+        <div class="author">
+          {{paper.author}}
+        </div>
+        <div class="periodical">
+          <em>{{paper.source}}</em>
+        </div>
+        {% if paper.remark %}
+          <div class="periodical">
+            <em>Remark: {{paper.remark}}</em>
+          </div>
+        {% endif %}
+        <div class="links">
+          {% if paper.html %}
+            <a href="{{ paper.html }}" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          {% endif %}
+          {% if paper.pdf %}
+            {% if paper.pdf contains '://' %}
+            <a href="{{ paper.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            {% else %}
+            <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>

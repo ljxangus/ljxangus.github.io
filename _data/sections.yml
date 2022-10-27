@@ -1,0 +1,45 @@
+- name: Blogs
+  id: blogs
+  url: blog.html
+  description: Here are my blog, with some latest news.
+  content:
+  first: true
+  
+- name: Research Interests
+  id: research_interests
+  description: My reserach interests includes
+  content:
+  first: false
+
+- name: News
+  id: news
+  url: news.html
+  first: false
+  description: Here are the recent news. All the news can be found <a href="news.html" class="highlighted">here</a>.
+
+- name: Publications
+  id: publications
+  description: Here are some selected publications. A complete list of publications is <a href="publications.html" class="highlighted">here</a>.
+  url: publications.html
+  first: false
+
+- name: Projects
+  id: projects
+  description: Here are a summary list of my projects. A complete list of projects is <a href="projects.html" class="highlighted">here</a>.
+  content: 
+  url: projects.html
+  first: false
+  
+# - name: Coursework
+#   id: courses
+#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#   content: 
+#   first: false
+
+# - name: Teaching
+#   id: teaching
+#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#   content: 
+#   url: teaching.html
+#   first: false
+
