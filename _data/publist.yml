@@ -1,3 +1,35 @@
+- title: "Blender: Toward Practical Simulation Framework for BLE Neighbor Discovery"
+  author: "Y. Ding, T. Li, <em><b>J. Liang</b></em> and D. Wang"
+  source: "Proceedings of the 25th International ACM Conference on Modeling Analysis and Simulation of Wireless and Mobile Systems"
+  type: conference
+  pdf: 
+  html: "https://dl.acm.org/doi/abs/10.1145/3551659.3559052"
+  showFront: 1
+
+- title: "Age of Information in SIC-based Non-Orthogonal Multiple Access"
+  author: "Q. Ren, T.T. Chan, <em><b>J. Liang</b></em> and H. Pan"
+  source: "IEEE WCNC 2022"
+  type: conference
+  pdf: "https://www.researchgate.net/profile/Tse-Tin-Chan/publication/357113757_Age_of_Information_in_SIC-based_Non-Orthogonal_Multiple_Access/links/61d468ded4500608168afa3a/Age-of-Information-in-SIC-based-Non-Orthogonal-Multiple-Access.pdf"
+  html: "https://ieeexplore.ieee.org/abstract/document/9771565"
+  showFront: 1
+
+- title: "Timely status update: Should ARQ be used in two-hop networks?"
+  author: "J. Feng, H. Pan, T.T. Chan and <em><b>J. Liang</b></em>"
+  source: "IEEE ICC 2022"
+  type: conference
+  pdf: "https://arxiv.org/pdf/2201.10253.pdf"
+  html: "https://ieeexplore.ieee.org/document/9838745"
+  showFront: 1
+
+- title: "DNN-aided Low-complexity Physical-layer Network Coding Enabled Non-orthogonal Multiple Access"
+  author: "G. Chen, T.T. Chan, H. Pan and <em><b>J. Liang</b></em>"
+  source: "2022 IEEE 19th Annual Consumer Communications & Networking Conference (CCNC)"
+  type: conference
+  pdf: "https://www.researchgate.net/profile/Tse-Tin-Chan/publication/355984546_DNN-aided_Low-complexity_Physical-layer_Network_Coding_Enabled_Non-orthogonal_Multiple_Access/links/61967b5bd7d1af224b04514a/DNN-aided-Low-complexity-Physical-layer-Network-Coding-Enabled-Non-orthogonal-Multiple-Access.pdf"
+  html: "https://ieeexplore.ieee.org/abstract/document/9700575/"
+  showFront: 1
+
 - title: "ROFA: An OFDMA system for Ultra-Reliable Wireless Industrial Networking"
   author: "<em><b>J. Liang</b></em>, and S. C. Liew"
   source: arXiv preprint arXiv:2109.00979, submitted to IEEE Transactions on Mobile Computing <b>(TMC)</b>
