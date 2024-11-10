@@ -1,9 +1,9 @@
-- name: <i class="fas fa-wifi"></i> Industrial Wireless Communication
+- name: <i class="fas fa-wifi"></i> Wireless Communications and Networking
+
+- name: <i class="fa-solid fa-gears"></i> Bluetooth&Wi-Fi for Ultra-reliable Control Plane
 
 - name: <i class="fas fa-satellite-dish"></i> Software-defined Radio (SDR)
 
-- name: <i class="fas fa-drafting-compass"></i> Design and implementation of Wireless Systems
+- name: <i class="fas fa-network-wired"></i> Internel Protocol and Communication
 
-- name: <i class="fas fa-network-wired"></i> Industrial IoT (IIoT)
-
-- name: <i class="fas fa-retweet"></i> Ultra-reliable Low-latency Communication (URLLC)
+- name: <i class="fas fa-retweet"></i> Heterogeneous Networking

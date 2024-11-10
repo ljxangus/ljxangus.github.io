@@ -87,3 +87,41 @@ last-updated: 2020-10-30 5:55 PM
   {% endif %}
 {% endfor %}
 </ul>
+
+<h3><em>Patents</em></h3>
+<ul style="list-style: decimal;">
+{% for paper in site.data.publist %}
+  {% if paper.title and paper.type == "patent" %}
+    <li>
+      <div class="card border-0" style="width: 100%; padding-left: 5px; padding-top: 5px;">
+        <div class="title font-weight-bold">
+          {{paper.title}}
+        </div>
+        <div class="author">
+          {{paper.author}}
+        </div>
+        <div class="periodical">
+          <em>{{paper.source}}</em>
+        </div>
+        {% if paper.remark %}
+          <div class="periodical">
+            <em>Remark: {{paper.remark}}</em>
+          </div>
+        {% endif %}
+        <div class="links">
+          {% if paper.html %}
+            <a href="{{ paper.html }}" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          {% endif %}
+          {% if paper.pdf %}
+            {% if paper.pdf contains '://' %}
+            <a href="{{ paper.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            {% else %}
+            <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank"><i class="fas fa-file-pdf"></i></a>
+            {% endif %}
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>

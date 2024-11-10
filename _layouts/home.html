@@ -68,8 +68,8 @@ layout: default
 
 <!-- HOME HIGHLIGHTS SECTION --> 
 {% if site.animate %}
-<!-- <div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border" style="max-width: 100%;"> -->
-    <div class="card mx-auto glowing-border"  style="max-width: 100%;">
+<div class="card mx-auto animate__animated animate__slideInUp glowing-border" style="max-width: 100%;" data-delay="10000">
+    <!-- <div class="card mx-auto glowing-border"  style="max-width: 100%;"> -->
   {% else %}
     <div class="card mx-auto mb-1 border-0"  style="max-width: 100%;">
 {% endif %}
@@ -161,12 +161,13 @@ layout: default
                 <p class="card-text">
                   {% include publistPage.html %}
                 </p>
+                <h5><a href="{{section.url}}" class="highlighted">See all the {{section.name}}...</a></h5>
               </div>
             <!-- The Projects section -->
             {% elsif section.name == "Projects" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">  
                 <p><i>{{section.description}}</i></p>
-                  {% for projects in site.data.projects %}
+                  {% for projects in site.data.projects limit: 3 %}
                   <div class="media mt-2" style="margin-bottom: 50px;">
                     <a href="{{ projects.link }}"><img src="{{ projects.image }}" class="mr-3 mb-2 img-thumbnail border-0" style="max-width: 200px;" alt="..."></a>
                     <div class="media-body">
