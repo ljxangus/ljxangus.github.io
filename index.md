@@ -5,7 +5,7 @@ date: 2023-07-30
 ---
 ### LIANG Jiaxin
 Ph.D. (CUHK), B.E. (CUHK) \\
-Email: jiax.l[AT]outlook.com or jiaxin[AT]ie.cuhk.edu.hk
+Email: jiax.l[AT]outlook.com
 
 I obtained my Ph.D. degree in Information Engineering from The Chinese University of Hong Kong (CUHK) in 2021, under the supervision of <a href="http://www.ie.cuhk.edu.hk/people/soung.shtml" class="highlighted">Professor LIEW Soung-Chang</a>. I am pround to be a member of  <a href="http://wireless.ie.cuhk.edu.hk/" class="highlighted">Advanced Wireless System Group</a> (AWSG) at CUHK.
 

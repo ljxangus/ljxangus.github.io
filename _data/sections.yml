@@ -1,15 +1,8 @@
-- name: Blogs
-  id: blogs
-  url: blog.html
-  description: Here are my blog, with some latest news.
-  content:
-  first: true
-  
 - name: Research Interests
   id: research_interests
   description: My reserach interests includes
   content:
-  first: false
+  first: true
 
 - name: News
   id: news
@@ -29,7 +22,14 @@
   content: 
   url: projects.html
   first: false
-  
+
+- name: Blogs
+  id: blogs
+  url: blog.html
+  description: Here are my blog, with some latest news.
+  content:
+  first: false
+
 # - name: Coursework
 #   id: courses
 #   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

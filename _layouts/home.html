@@ -106,19 +106,6 @@ layout: default
             {% elsif section.name == "Blogs" %}
                 <p><i>{{section.description}}</i></p>
                 {% for post in site.posts limit: 3 %}
-                  <!-- <div class="card bg-light mb-3" style="width: 100%;">
-                    <div class="card-header" style="font-size: medium;font-weight:{{ theme.post-font-weight }};">
-                          {{ post.date }}
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text">
-                        {{ post.description }}
-                      </p>
-                      {% if post.url %}
-                        <a class="btn btn-primary" href="{{ post.link }}" role="button" style="color: azure;">Read more</a>
-                      {% endif %}
-                    </div>
-                  </div> -->
                   <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
                     <h3><a href="{{ post.url }}" class="nohighlight">{{ post.title }}</a></h3>
                       <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">{{post.tag}}</a>  
@@ -158,19 +145,12 @@ layout: default
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
                 <p><i>{{section.description}}</i></p>
                 {% for post in site.posts limit: 3 %}
-                  <div class="card bg-light mb-3" style="width: 100%;">
-                    <div class="card-header" style="font-size: medium;font-weight:{{ theme.post-font-weight }};">
-                          {{ post.date }}
-                    </div>
-                    <div class="card-body">
-                      <p class="card-text">
-                        {{ post.description }}
-                      </p>
-                      {% if post.url %}
-                        <a class="btn btn-primary" href="{{ post.link }}" role="button" style="color: azure;">Read more</a>
-                      {% endif %}
-                    </div>
-                  </div>
+                <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
+                  <h3><a href="{{ post.url }}" class="nohighlight">{{ post.title }}</a></h3>
+                    <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">{{post.tag}}</a>  
+                  <p>{{post.description}}</p>
+                  <p><i>{{post.lead}}</i></p>
+                </div>
                 {% endfor %}
                 <h5><a href="{{section.url}}" class="highlighted">See all the {{section.name}}...</a></h5>
               </div>

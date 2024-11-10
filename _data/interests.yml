@@ -1,44 +1,9 @@
 - name: <i class="fas fa-wifi"></i> Industrial Wireless Communication
-  Program: School of Public and International Affairs  
-  School: Harvard
-  id: POL554
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  link: https://example.com
 
 - name: <i class="fas fa-satellite-dish"></i> Software-defined Radio (SDR)
-  Program: School of Public and International Affairs
-  School: Harvard
-  id: POL585
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  link: https://example.com
 
 - name: <i class="fas fa-drafting-compass"></i> Design and implementation of Wireless Systems
-  Program: School of Public and International Affairs
-  School: Harvard
-  id: POL585
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  link: https://example.com
 
 - name: <i class="fas fa-network-wired"></i> Industrial IoT (IIoT)
-  Program: School of Public and International Affairs
-  School: Harvard
-  id: POL585
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  link: https://example.com
 
 - name: <i class="fas fa-retweet"></i> Ultra-reliable Low-latency Communication (URLLC)
-  Program: School of Public and International Affairs
-  School: Harvard
-  id: POL585
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  link: https://example.com
