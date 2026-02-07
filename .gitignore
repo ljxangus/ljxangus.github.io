@@ -1,3 +1,4 @@
+# Jekyll
 *.gem
 .bundle
 .jekyll-cache
@@ -6,7 +7,60 @@ _site
 Gemfile.lock
 .jekyll-metadata
 
-# Demo Site 
+# Ruby/Bundler
+vendor/bundle/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Project specific
+.trae/
+config.json
+logs/
+backups/
+test_*.py
+update_publications.py
+
+# Demo Site
 /Demo
-*.sh 
+*.sh
 *.xml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+.tmp/

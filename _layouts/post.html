@@ -3,19 +3,36 @@ layout: page
 ---
 {% assign theme = site.data.themes[site.ui_theme] %}
 
-
-
-<div class="blogcard {{ page.card }} mb-4 mt-4" style="width: 100%;">
-  <div class="card-body">
-    <h5 class="card-title text-center" style="font-size:{{ theme.post-tag-size }};">{{ page.tag }}</h5>
-    <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
-    <h6 class="card-subtitle text-center" style="font-size:{{ theme.post-author-size }};">Author: {{page.author}} | Published {{page.date}}</h6>
+<article class="article-container">
+  <header class="article-header">
+    <div class="article-meta">
+      {% if page.tag %}
+        <span class="article-tag">{{ page.tag }}</span>
+      {% endif %}
+      {% if page.date %}
+        <time class="article-date" datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+      {% endif %}
+    </div>
+    <h1 class="article-title">{{ page.title }}</h1>
+    {% if page.author %}
+      <div class="article-author">
+        <span class="author-label">By</span> {{ page.author }}
+      </div>
+    {% endif %}
     {% include social-cards-copy.html %}
-  </div>
-</div>
+  </header>
 
-<div class="card border-0" style="width: 100%;">
-  <div class="card-body">
-    <p class="card-text">{{ content | markdownify }}</p>
+  <div class="article-content">
+    {{ content }}
   </div>
-</div>
+
+  <footer class="article-footer">
+    <div class="article-navigation">
+      <a href="/blog.html" class="back-to-blog">
+        <span class="arrow-icon">&larr;</span> Back to all posts
+      </a>
+    </div>
+  </footer>
+</article>
