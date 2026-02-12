@@ -4,6 +4,44 @@ title:  Research Projects
 permalink: projects.html
 ---
 {% assign theme = site.data.themes[site.ui_theme] %}
+
+{% if site.ui_theme == 'lumina' %}
+<!-- Lumina Theme Projects Layout -->
+<style>
+  .highlighted {
+    color: #0f766e;
+    text-decoration: none;
+    border-bottom: 1px dashed #0f766e;
+  }
+  .highlighted:hover {
+    border-bottom-style: solid;
+  }
+</style>
+
+<div class="lumina-projects-grid">
+  {% for projects in site.data.projects %}
+  <div class="lumina-project-card">
+    {% if projects.image %}
+    <img src="{{ projects.image }}" alt="{{ projects.name }}" class="lumina-project-image">
+    {% endif %}
+    <h3 class="lumina-project-title">
+      <a href="{{ projects.link }}">{{ projects.name }}</a>
+    </h3>
+    <p class="lumina-project-desc">{{ projects.description }}</p>
+    {% if projects.tech %}
+    <div class="lumina-project-tech">
+      {% for tech in projects.tech %}
+      <span class="lumina-tag lumina-tech-tag">{{ tech }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+{% else %}
+<!-- Original Dumbarton Projects Layout -->
+
 <div class="blogcard  card-2 mb-4" style="width: 100%;">
   <div class="card-body">
     <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
@@ -25,3 +63,5 @@ permalink: projects.html
         </div>
     </div>
 {% endfor %}
+
+{% endif %}

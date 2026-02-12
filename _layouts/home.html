@@ -3,6 +3,92 @@ layout: default
 ---
 {% assign theme = site.data.themes[site.ui_theme] %}
 
+{% if site.ui_theme == 'lumina' %}
+<!-- Lumina Theme Home Layout -->
+<style>
+  .highlighted {
+    color: #0f766e;
+    text-decoration: none;
+    border-bottom: 1px dashed #0f766e;
+  }
+  .highlighted:hover {
+    border-bottom-style: solid;
+  }
+</style>
+
+<!-- Hero Section -->
+<section class="lumina-hero">
+  {% if site.profile_image %}
+  <img src="{{ site.profile_image }}" alt="{{ site.author }}" class="lumina-hero-avatar">
+  {% endif %}
+  <h1 class="lumina-hero-title">{{ site.author }}</h1>
+  {% if site.occupation %}
+  <p class="lumina-hero-subtitle">{{ site.occupation }}</p>
+  {% endif %}
+</section>
+
+<!-- Bio Section -->
+<div class="lumina-card lumina-fade-in">
+  <div class="lumina-card-text lumina-markdown">
+    {{ content }}
+  </div>
+</div>
+
+<!-- Research Interests -->
+{% if site.data.interests %}
+<section class="lumina-fade-in" style="animation-delay: 0.1s;">
+  <h2 class="lumina-section-title">Research Interests</h2>
+  <div class="lumina-tags">
+    {% for interest in site.data.interests %}
+    <span class="lumina-tag">{{ interest.name }}</span>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<!-- News Section -->
+{% if site.data.news %}
+<section class="lumina-fade-in" style="animation-delay: 0.2s;">
+  <h2 class="lumina-section-title">Latest News</h2>
+  {% for information in site.data.news limit: 3 %}
+  <div class="lumina-news-card">
+    <div class="lumina-news-date">{{ information.date }}</div>
+    <div class="lumina-news-headline">{{ information.headline }}</div>
+    {% if information.link %}
+    <a href="{{ information.link }}" class="lumina-news-link">Read more →</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+  {% if site.data.news.size > 3 %}
+  <p style="text-align: center; margin-top: 1.5rem;">
+    <a href="/news.html" class="lumina-btn">View All News</a>
+  </p>
+  {% endif %}
+</section>
+{% endif %}
+
+<!-- Featured Publications -->
+{% if site.data.publist %}
+<section class="lumina-fade-in" style="animation-delay: 0.3s;">
+  <h2 class="lumina-section-title">Featured Publications</h2>
+  {% for paper in site.data.publist limit: 3 %}
+  <div class="lumina-publication">
+    <div class="lumina-pub-title">
+      <a href="{% if paper.html %}{{ paper.html }}{% else %}#{% endif %}" target="_blank">{{ paper.title }}</a>
+    </div>
+    <div class="lumina-pub-author">{{ paper.author }}</div>
+    <div class="lumina-pub-source">{{ paper.source }}</div>
+  </div>
+  {% endfor %}
+  <p style="text-align: center; margin-top: 1.5rem;">
+    <a href="/publications.html" class="lumina-btn">View All Publications</a>
+  </p>
+</section>
+{% endif %}
+
+{% else %}
+<!-- Original Dumbarton Home Layout -->
+
 <!--  HELP TIPS SECTION  -->
 <!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
 {% if site.help_tips %}
@@ -66,7 +152,7 @@ layout: default
 
 <!-- style="font-family:{{ theme.link-font }};background-color:{{ theme.nav-color }}; -->
 
-<!-- HOME HIGHLIGHTS SECTION --> 
+<!-- HOME HIGHLIGHTS SECTION -->
 {% if site.animate %}
 <div class="card mx-auto animate__animated animate__slideInUp glowing-border" style="max-width: 100%;" data-delay="10000">
     <!-- <div class="card mx-auto glowing-border"  style="max-width: 100%;"> -->
@@ -88,13 +174,13 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-  <div class="card-body">          
+  <div class="card-body">
       <div class="tab-content mt-3">
         {% for section in site.data.sections %}
           {% if section.first %}
           <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
             <!-- The Research Interests section in the first tab-->
-            {% if section.name == "Research Interests" %}  
+            {% if section.name == "Research Interests" %}
                 <p><i>{{section.description}}</i></p>
                 <ul class="list-group">
                 {% for interest in site.data.interests %}
@@ -108,7 +194,7 @@ layout: default
                 {% for post in site.posts limit: 3 %}
                   <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
                     <h3><a href="{{ post.url }}" class="nohighlight">{{ post.title }}</a></h3>
-                      <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">{{post.tag}}</a>  
+                      <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">{{post.tag}}</a>
                     <p>{{post.description}}</p>
                     <p><i>{{post.lead}}</i></p>
                   </div>
@@ -147,7 +233,7 @@ layout: default
                 {% for post in site.posts limit: 3 %}
                 <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
                   <h3><a href="{{ post.url }}" class="nohighlight">{{ post.title }}</a></h3>
-                    <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">{{post.tag}}</a>  
+                    <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">{{post.tag}}</a>
                   <p>{{post.description}}</p>
                   <p><i>{{post.lead}}</i></p>
                 </div>
@@ -165,7 +251,7 @@ layout: default
               </div>
             <!-- The Projects section -->
             {% elsif section.name == "Projects" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">  
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
                 <p><i>{{section.description}}</i></p>
                   {% for projects in site.data.projects limit: 3 %}
                   <div class="media mt-2" style="margin-bottom: 50px;">
@@ -183,10 +269,10 @@ layout: default
                   </div>
                   {% endfor %}
                   <h5><a href="{{section.url}}" class="highlighted">See all the {{section.name}}...</a></h5>
-              </div>        
+              </div>
             <!-- The Teaching section -->
             {% elsif section.name == "Teaching" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">  
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
                 <p><i>{{section.description}}</i></p>
                     {% for courses in site.data.teaching %}
                     <div class="list-group">
@@ -204,7 +290,7 @@ layout: default
               </div>
             <!-- The Coursework section -->
             {% elsif section.name == "Coursework" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">  
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
                 <p><i>{{section.description}}</i></p>
                 <div class="list-group">
                 {% for courses in site.data.courses %}
@@ -214,7 +300,7 @@ layout: default
               </div>
             <!-- The Research Interests section -->
             {% elsif section.name == "Research Interests" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">  
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
                 <p><i>{{section.description}}</i></p>
                 <div class="list-group">
                 {% for interest in site.data.interests %}
@@ -224,9 +310,9 @@ layout: default
                 </div>
               </div>
             {% else %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">  
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
                 <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
-                <p class="card-text">{{ section.content }} </p>              
+                <p class="card-text">{{ section.content }} </p>
               </div>
             {% endif %}
           {% endif %}
@@ -242,13 +328,14 @@ layout: default
 -->
 
 
+
 <!--JS FUNCTION FOR RECENT WORK SECTION -->
 <script>
     $('#test-list a').on('click', function (e) {
     e.preventDefault()
     $(this).tab('show')
     })
-</script> 
+</script>
 
 <!-- OPTIONAL TOAST JS FUNCTION-->
 <script>
@@ -269,3 +356,5 @@ $('.collapse').collapse()
 <script>
 $('.show').show()
 </script>
+
+{% endif %}

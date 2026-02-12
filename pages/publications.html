@@ -2,10 +2,147 @@
 layout: page
 permalink: /publications.html
 title: Publications
-header-img: 
+header-img:
 last-updated: 2020-10-30 5:55 PM
 ---
 {% assign theme = site.data.themes[site.ui_theme] %}
+
+{% if site.ui_theme == 'lumina' %}
+<!-- Lumina Theme Publications Layout -->
+<style>
+  .highlighted {
+    color: #0f766e;
+    text-decoration: none;
+    border-bottom: 1px dashed #0f766e;
+  }
+  .highlighted:hover {
+    border-bottom-style: solid;
+  }
+</style>
+
+<!-- Journal Publications -->
+{% assign journals = site.data.publist | where: "type", "journal" %}
+{% if journals.size > 0 %}
+<h2 class="lumina-section-title">Journal Articles</h2>
+{% for paper in journals %}
+<div class="lumina-publication">
+  <div class="lumina-pub-title">
+    {% if paper.html %}
+    <a href="{{ paper.html }}" target="_blank">{{ paper.title }}</a>
+    {% else %}
+    {{ paper.title }}
+    {% endif %}
+  </div>
+  <div class="lumina-pub-author">{{ paper.author }}</div>
+  <div class="lumina-pub-source"><em>{{ paper.source }}</em></div>
+  {% if paper.remark %}
+  <div class="lumina-pub-source"><em>Remark: {{ paper.remark }}</em></div>
+  {% endif %}
+  <div class="lumina-pub-links">
+    {% if paper.html %}
+    <a href="{{ paper.html }}" class="lumina-btn lumina-btn-outline" target="_blank" aria-label="Paper link">
+      <i class="fas fa-external-link-alt"></i> Paper
+    </a>
+    {% endif %}
+    {% if paper.pdf %}
+    {% if paper.pdf contains '://' %}
+    <a href="{{ paper.pdf }}" class="lumina-btn" target="_blank" aria-label="PDF">
+      <i class="fas fa-file-pdf"></i> PDF
+    </a>
+    {% else %}
+    <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="lumina-btn" target="_blank" aria-label="PDF">
+      <i class="fas fa-file-pdf"></i> PDF
+    </a>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- Conference Publications -->
+{% assign conferences = site.data.publist | where: "type", "conference" %}
+{% if conferences.size > 0 %}
+<h2 class="lumina-section-title">Conference Papers</h2>
+{% for paper in conferences %}
+<div class="lumina-publication">
+  <div class="lumina-pub-title">
+    {% if paper.html %}
+    <a href="{{ paper.html }}" target="_blank">{{ paper.title }}</a>
+    {% else %}
+    {{ paper.title }}
+    {% endif %}
+  </div>
+  <div class="lumina-pub-author">{{ paper.author }}</div>
+  <div class="lumina-pub-source"><em>{{ paper.source }}</em></div>
+  {% if paper.remark %}
+  <div class="lumina-pub-source"><em>Remark: {{ paper.remark }}</em></div>
+  {% endif %}
+  <div class="lumina-pub-links">
+    {% if paper.html %}
+    <a href="{{ paper.html }}" class="lumina-btn lumina-btn-outline" target="_blank" aria-label="Paper link">
+      <i class="fas fa-external-link-alt"></i> Paper
+    </a>
+    {% endif %}
+    {% if paper.pdf %}
+    {% if paper.pdf contains '://' %}
+    <a href="{{ paper.pdf }}" class="lumina-btn" target="_blank" aria-label="PDF">
+      <i class="fas fa-file-pdf"></i> PDF
+    </a>
+    {% else %}
+    <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="lumina-btn" target="_blank" aria-label="PDF">
+      <i class="fas fa-file-pdf"></i> PDF
+    </a>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- Patents -->
+{% assign patents = site.data.publist | where: "type", "patent" %}
+{% if patents.size > 0 %}
+<h2 class="lumina-section-title">Patents</h2>
+{% for paper in patents %}
+<div class="lumina-publication">
+  <div class="lumina-pub-title">
+    {% if paper.html %}
+    <a href="{{ paper.html }}" target="_blank">{{ paper.title }}</a>
+    {% else %}
+    {{ paper.title }}
+    {% endif %}
+  </div>
+  <div class="lumina-pub-author">{{ paper.author }}</div>
+  <div class="lumina-pub-source"><em>{{ paper.source }}</em></div>
+  {% if paper.remark %}
+  <div class="lumina-pub-source"><em>Remark: {{ paper.remark }}</em></div>
+  {% endif %}
+  <div class="lumina-pub-links">
+    {% if paper.html %}
+    <a href="{{ paper.html }}" class="lumina-btn lumina-btn-outline" target="_blank" aria-label="Paper link">
+      <i class="fas fa-external-link-alt"></i> Patent
+    </a>
+    {% endif %}
+    {% if paper.pdf %}
+    {% if paper.pdf contains '://' %}
+    <a href="{{ paper.pdf }}" class="lumina-btn" target="_blank" aria-label="PDF">
+      <i class="fas fa-file-pdf"></i> PDF
+    </a>
+    {% else %}
+    <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="lumina-btn" target="_blank" aria-label="PDF">
+      <i class="fas fa-file-pdf"></i> PDF
+    </a>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+
+{% else %}
+<!-- Original Dumbarton Publications Layout -->
+
 <div class="blogcard  card-1 mb-4" style="width: 100%;">
   <div class="card-body">
     <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
@@ -125,3 +262,5 @@ last-updated: 2020-10-30 5:55 PM
   {% endif %}
 {% endfor %}
 </ul>
+
+{% endif %}

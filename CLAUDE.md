@@ -59,7 +59,128 @@ git status
 # Stage and commit
 git add <files>
 git commit -m "message"
+
+# Push to remote
+git push origin master
 ```
+
+## Local Development Setup
+
+### First-Time Setup
+
+On macOS with system Ruby, you may encounter permission errors when installing gems. To avoid this, configure bundler to install gems locally in the project:
+
+```bash
+# Configure bundler to use local path (recommended for system Ruby)
+bundle config set --local path 'vendor/bundle'
+
+# Install dependencies
+bundle install
+```
+
+This installs gems to `./vendor/bundle/` instead of the system directory, avoiding permission issues.
+
+### Starting the Development Server
+
+```bash
+# Start server (auto-regenerates on file changes)
+bundle exec jekyll serve
+
+# Specify host and port explicitly
+bundle exec jekyll serve --host 0.0.0.0 --port 4000
+
+# Enable incremental builds (faster regeneration)
+bundle exec jekyll serve --incremental
+```
+
+The server will be available at:
+- **http://localhost:4000** (local access)
+- **http://0.0.0.0:4000** (network-wide access)
+
+### Development Workflow
+
+1. **Start the server**: `bundle exec jekyll serve`
+2. **Edit files**: Jekyll auto-detects changes and regenerates the site
+3. **View changes**: Refresh browser at http://localhost:4000
+4. **Stop server**: Press `Ctrl+C` in the terminal
+
+**Important**: If you modify `_config.yml`, you must stop and restart the server for changes to take effect.
+
+### Common Local Development Issues
+
+**Port already in use**:
+```bash
+# Find process using port 4000
+lsof -i :4000
+
+# Kill the process (replace PID with actual process ID)
+kill -9 <PID>
+```
+
+**Gems not found after config change**:
+```bash
+# Clean and reinstall
+rm -rf vendor/bundle
+bundle install
+```
+
+**YAML warnings from backups**: YAML warnings in `backups/` directory can be safely ignored - these files are not processed by Jekyll.
+
+## Deployment
+
+### GitHub Pages
+
+This site is designed for deployment on GitHub Pages. The repository name matches the GitHub Pages pattern (`username.github.io`).
+
+**Deployment Steps**:
+
+```bash
+# 1. Update publication data (optional)
+python update_publications.py
+
+# 2. Stage all changes
+git add .
+
+# 3. Commit changes
+git commit -m "Update site content"
+
+# 4. Push to GitHub
+git push origin master
+```
+
+GitHub Pages will automatically build and deploy the site within a few minutes.
+
+**Access your site at**: `https://<username>.github.io`
+
+### GitHub Pages Configuration
+
+- **Source branch**: `master` (or `main`)
+- **Theme**: None (uses custom theme in repository)
+- **Jekyll version**: Managed by GitHub Pages (see `Gemfile` for `github-pages` gem compatibility)
+
+### Pre-deployment Checklist
+
+Before pushing to production:
+
+1. **Test locally**: Run `bundle exec jekyll serve` and verify the site works
+2. **Check for broken links**: Review internal and external links
+3. **Validate YAML**: Ensure `_data/*.yml` files are properly formatted
+4. **Update publications**: Run `python update_publications.py` to fetch latest papers
+5. **Review git status**: Check `git status` to ensure only intended files are staged
+
+**Note**: The `_site/` directory is ignored by git as it's regenerated during deployment.
+
+### Deployment Troubleshooting
+
+**Build fails on GitHub Pages**:
+- Check Ruby/Jekyll version compatibility in `Gemfile`
+- Review build logs in GitHub repository settings > Pages
+- Test locally with `bundle exec jekyll build`
+
+**Site not updating**:
+- GitHub Pages may take 1-3 minutes to rebuild
+- Clear browser cache (Ctrl+Shift+R or Cmd+Shift+R)
+- Verify commits were pushed: `git log origin/master`
 
 ## Architecture
 

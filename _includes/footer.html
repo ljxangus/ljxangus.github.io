@@ -1,3 +1,25 @@
+{% assign theme = site.data.themes[site.ui_theme] %}
+
+{% if site.ui_theme == 'lumina' %}
+<!-- Lumina Theme Footer -->
+<footer class="lumina-footer">
+  <p class="lumina-footer-text">© {{ "now" | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
+  <p class="lumina-footer-text">Theme based on <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton" target="_blank">Dumbarton</a>, modified with Lumina style.</p>
+  <div class="lumina-footer-links">
+    {% if site.github %}
+    <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github"></i></a>
+    {% endif %}
+    {% if site.linkedin %}
+    <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+    {% endif %}
+    {% if site.email %}
+    <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
+    {% endif %}
+  </div>
+</footer>
+
+{% else %}
+<!-- Original Dumbarton Footer -->
 <div class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
     <p class="navbar-text pull-left">© 2022 - Theme Built By Tyler Butler, modified by LIANG Jiaxin, See it on
@@ -7,10 +29,11 @@
             {% include social-footer.html %}
     </p>
   </div>
-</div> 
+</div>
 
 <script>
   $(function () {
     $('[data-toggle="popover"]').popover()
   })
 </script>
+{% endif %}

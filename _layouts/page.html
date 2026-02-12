@@ -1,9 +1,47 @@
+---
+layout: default
+---
+
+{% if site.ui_theme == 'lumina' %}
+<!-- Lumina Theme Page Layout -->
+<style>
+  .highlighted {
+    color: #0f766e;
+    text-decoration: none;
+    border-bottom: 1px dashed #0f766e;
+  }
+  .highlighted:hover {
+    border-bottom-style: solid;
+  }
+</style>
+
+<div class="lumina-card">
+  <h1 class="lumina-card-title" style="text-align: center;">{{ page.title }}</h1>
+  {% if page.description %}
+  <p style="text-align: center; color: #64748b; margin-bottom: 1.5rem;">{{ page.description }}</p>
+  {% endif %}
+</div>
+
+<div class="lumina-card">
+  <div class="lumina-card-text lumina-markdown">
+    {{ content }}
+  </div>
+  {% if page.last-updated %}
+  <p style="text-align: center; color: #94a3b8; font-size: 0.875rem; margin-top: 2rem;">
+    This page was last updated at {{ page.last-updated }}.
+  </p>
+  {% endif %}
+</div>
+
+{% else %}
+<!-- Original Dumbarton Page Layout -->
 <!DOCTYPE html>
 {% assign theme = site.data.themes[site.ui_theme] %}
 <html>
-  {% include head-blog.html %}
-  <body>
+  {% include head.html %}
+  <body style="background-color:{{theme.background-color}};">
     {% include nav.html %}
+    <div class="dumbarton-spacer-sm"></div>
     <div class="container">
       {% if page.header-img %}
       <div class="card border-0">
@@ -51,6 +89,8 @@
         {% endif %}
       {% endif %}
     </div>
+    <div class="dumbarton-spacer" ></div>
     {% include footer.html %}
   </body>
 </html>
+{% endif %}

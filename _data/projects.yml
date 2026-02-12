@@ -1,88 +1,330 @@
 - name: The DARPA Spectrum Collaboration Challenge (SC2)
   id: sc2
-  description: >
-    <ul>
-    <li>It was the first-of-its-kind collaborative machine-learning competition to overcome scarcity in the radio frequency (RF) spectrum.</li>
-    <li>Built a real-time wireless system that leverage Artificial Intelligence to access the spectrum without interfering the other signals.</li>
-    <li>Cooperated with the research group from the North-Western University</li>
-    <li>Qualified for Preliminary Event 1 & 2 (PE1 & 2) and presented in the events hosted in Johns Hopkins University Applied Physics Laboratory.</li>
-    </ul>
+  description: '<ul> <li>It was the first-of-its-kind collaborative machine-learning
+    competition to overcome scarcity in the radio frequency (RF) spectrum.</li> <li>Built
+    a real-time wireless system that leverage Artificial Intelligence to access the
+    spectrum without interfering the other signals.</li> <li>Cooperated with the research
+    group from the North-Western University</li> <li>Qualified for Preliminary Event
+    1 & 2 (PE1 & 2) and presented in the events hosted in Johns Hopkins University
+    Applied Physics Laboratory.</li> </ul>
+
+    '
   date: true
   link: https://www.darpa.mil/program/spectrum-collaboration-challenge
-  image:  https://www.darpa.mil/DDM_Gallery/sc2-619-316a.jpg
-  tech: 
-    - Software-define Radio
-    - Wireless System Design
-    - Signal Processing
-
+  image: https://www.darpa.mil/DDM_Gallery/sc2-619-316a.jpg
+  tech:
+  - Software-define Radio
+  - Wireless System Design
+  - Signal Processing
 - name: Ultra-reliable OFDMA Systems for IIoT
   id: rofa
-  description: >
-    TBD
-  link:
+  description: 'TBD
+
+    '
+  link: null
   image: /assets/img/projects/rofa.png
-  tech: 
-    - Software-define Radio
-    - Wireless System Design
-    - Signal Processing 
-
-
+  tech:
+  - Software-define Radio
+  - Wireless System Design
+  - Signal Processing
 - name: Wireless Time-Sensitive Network (TSN) for IIoT
   id: rtts-sdr
-  description: >
-    <ul>
-    <li>A real-time wireless system that is implemented on PC-USRP using GNURadio, targeting to provide TSN service to the upper layer with high accuracy synchronization.</li>
-    <li>Achieving synchronization among nodes to within 100ns, and the end-to-end latency can be down to 3.75ms.</li>
-    <li>Easy-deployable and reconfigurable for many other time-critical wireless applications.</li>
-    </ul>
+  description: '<ul> <li>A real-time wireless system that is implemented on PC-USRP
+    using GNURadio, targeting to provide TSN service to the upper layer with high
+    accuracy synchronization.</li> <li>Achieving synchronization among nodes to within
+    100ns, and the end-to-end latency can be down to 3.75ms.</li> <li>Easy-deployable
+    and reconfigurable for many other time-critical wireless applications.</li> </ul>
+
+    '
   date: true
   link: http://wireless.ie.cuhk.edu.hk/rtts-sdr.html
   image: http://wireless.ie.cuhk.edu.hk/images/respic/rtts_sdr.jpg
-  tech: 
-    - Software-define Radio
-    - Signal Processing
-    - Synchornization
-
+  tech:
+  - Software-define Radio
+  - Signal Processing
+  - Synchornization
 - name: Network-Coded Multiple Access on Unmanned Aerial Vehicle
   id: nc-uav
-  description: >
-    <ul>
-    <li>Design and implement a wireless system running on the top of real Unmanned Aerial Vehicles.</li>
-    <li>Leveraging the Embeded USRP E310 to transmit and receive signals to evaluating the algorithm.</li>
-    </ul>
-  date: true
-  link:
-  image:  https://www.researchgate.net/profile/Mingzhe-Chen-2/publication/331195915/figure/fig1/AS:727867440787459@1550548529427/A-cellular-network-with-a-UAV-base-station.png
-  tech: 
-    - Software-define Radio
-    - Wireless System Design
-    - Signal Processing
+  description: '<ul> <li>Design and implement a wireless system running on the top
+    of real Unmanned Aerial Vehicles.</li> <li>Leveraging the Embeded USRP E310 to
+    transmit and receive signals to evaluating the algorithm.</li> </ul>
 
+    '
+  date: true
+  link: null
+  image: https://www.researchgate.net/profile/Mingzhe-Chen-2/publication/331195915/figure/fig1/AS:727867440787459@1550548529427/A-cellular-network-with-a-UAV-base-station.png
+  tech:
+  - Software-define Radio
+  - Wireless System Design
+  - Signal Processing
 - name: A generic real-time Time-Slotted System on SDR
   id: tdma-sdr
-  description: >
-    <ul>
-    <li>Built a full-stack time-slotted system based on Software-defined radio platform (USRP and GNURadio) that could be used to verify many MAC scheme (e.g. Coded Slotted Aloha, Physical-layer Network</li>
-    <li>Served as an implementation platform for several projects in our research groups.</li>
-    </ul>
-  date: true
-  link:
-  image: /assets/img/projects/tdma.png
-  tech: 
-    - Software-define Radio
-    - Wireless System Design
+  description: '<ul> <li>Built a full-stack time-slotted system based on Software-defined
+    radio platform (USRP and GNURadio) that could be used to verify many MAC scheme
+    (e.g. Coded Slotted Aloha, Physical-layer Network</li> <li>Served as an implementation
+    platform for several projects in our research groups.</li> </ul>
 
-- name: Design and implementation of high performance decoders for next generation wireless systems
+    '
+  date: true
+  link: null
+  image: /assets/img/projects/tdma.png
+  tech:
+  - Software-define Radio
+  - Wireless System Design
+- name: Design and implementation of high performance decoders for next generation
+    wireless systems
   id: pnc-decoder
-  description: >
-    <ul>
-    <li>Implemented a reduced-complexity convolutional decoder for Physical-layer Network Coding (PNC) in GNU Radio.</li>
-    <li>Built the first single-GPP based development environment for PNC with a video streaming demonstration.</li>
+  description: '<ul> <li>Implemented a reduced-complexity convolutional decoder for
+    Physical-layer Network Coding (PNC) in GNU Radio.</li> <li>Built the first single-GPP
+    based development environment for PNC with a video streaming demonstration.</li>
     </ul>
+
+    '
   date: true
   link: http://wireless.ie.cuhk.edu.hk/rpnc.html
   image: http://wireless.ie.cuhk.edu.hk/images/respic/pncRelay.png
-  tech: 
-    - Software-define Radio
-    - Wireless System Design
-    - Signal Processing
+  tech:
+  - Software-define Radio
+  - Wireless System Design
+  - Signal Processing
+- name: Timely Information Update With Nonorthogonal Multiple Access
+  id: timely-information-u
+  description: ">\n    A research paper published in\n    Published in: IEEE Transactions\
+    \ on Industrial Informatics <b>(TII)</b>, vol. 17, no. 6, pp. 4096-4106, June\
+    \ 2021\n    Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/9130084/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE Transactions on Industrial Informatics <b>(TII)</b>, vol. 17,
+    no. 6, pp. 4096-4106, June 2021
+  added_date: '2026-01-17'
+- name: Design and implementation of time-sensitive wireless IoT networks on software-defined
+    radio
+  id: design-and-implement
+  description: ">\n    A research paper published in\n    Published in: IEEE Internet\
+    \ of Things Journal 9 (3), 2361-2374, 2021, \n    Source: Paper from Google Scholar"
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:5nxA0vEk-isC
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: 'IEEE Internet of Things Journal 9 (3), 2361-2374, 2021, '
+  added_date: '2026-01-17'
+- name: 'ROFA: An OFDMA system for Ultra-Reliable Wireless Industrial Networking'
+  id: rofa-an-ofdma-system
+  description: ">\n    A research paper published in\n    Published in: arXiv preprint\
+    \ arXiv:2109.00979, submitted to IEEE Transactions on Mobile Computing <b>(TMC)</b>\n\
+    \    Source: Paper from Google Scholar"
+  link: https://arxiv.org/abs/2109.00979
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: arXiv preprint arXiv:2109.00979, submitted to IEEE Transactions on
+    Mobile Computing <b>(TMC)</b>
+  added_date: '2026-01-17'
+- name: Toward optimal broadcast mode in offline finding network
+  id: toward-optimal-broad
+  description: ">\n    A research paper published in\n    Published in: IEEE Transactions\
+    \ on Mobile Computing, 2025, \n    Source: Paper from Google Scholar"
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:dhFuZR0502QC
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: 'IEEE Transactions on Mobile Computing, 2025, '
+  added_date: '2026-01-17'
+- name: Minimizing Age of Collection for Multiple Access in Wireless Industrial Internet
+    of Things
+  id: minimizing-age-of-co
+  description: ">\n    A research paper published in\n    Published in: IEEE Internet\
+    \ of Things Journal <b>(IoTJ)</b>, Volume: 11, Issue: 2, 15 January 2024\n   \
+    \ Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/10175510
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: 'IEEE Internet of Things Journal <b>(IoTJ)</b>, Volume: 11, Issue:
+    2, 15 January 2024'
+  added_date: '2026-01-17'
+- name: Accelerating BLE Neighbor Discovery via Wi-Fi Fingerprints
+  id: accelerating-ble-nei
+  description: ">\n    A research paper published in\n    Published in: IEEE <b>INFOCOM</b>\
+    \ 2023-IEEE Conference on Computer Communications Workshops <b>(INFOCOM WKSHPS)</b>\n\
+    \    Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/10225984/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE <b>INFOCOM</b> 2023-IEEE Conference on Computer Communications
+    Workshops <b>(INFOCOM WKSHPS)</b>
+  added_date: '2026-01-17'
+- name: On design and performance of offline finding network
+  id: on-design-and-perfor
+  description: ">\n    A research paper published in\n    Published in: IEEE <b>INFOCOM</b>\
+    \ 2023-IEEE Conference on Computer Communications, 1-10\n    Source: Paper from\
+    \ Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/10228880/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE <b>INFOCOM</b> 2023-IEEE Conference on Computer Communications,
+    1-10
+  added_date: '2026-01-17'
+- name: 'Age of information in multichannel Slotted ALOHA: Should collided users send
+    first?'
+  id: age-of-information-i
+  description: ">\n    A research paper published in\n    Published in: 2023 IEEE\
+    \ 13th Annual Computing and Communication Workshop and Conference …, 2023, \n\
+    \    Source: Paper from Google Scholar"
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:9ZlFYXVOiuMC
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: '2023 IEEE 13th Annual Computing and Communication Workshop and Conference …,
+    2023, '
+  added_date: '2026-01-17'
+- name: 'Timely status update: Should ARQ be used in two-hop networks?'
+  id: timely-status-update
+  description: ">\n    A research paper published in\n    Published in: IEEE ICC 2022\n\
+    \    Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/document/9838745
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE ICC 2022
+  added_date: '2026-01-17'
+- name: DNN-aided Low-complexity Physical-layer Network Coding Enabled Non-orthogonal
+    Multiple Access
+  id: dnn-aided-low-comple
+  description: ">\n    A research paper published in\n    Published in: 2022 IEEE\
+    \ 19th Annual Consumer Communications & Networking Conference (CCNC)\n    Source:\
+    \ Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/9700575/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: 2022 IEEE 19th Annual Consumer Communications & Networking Conference
+    (CCNC)
+  added_date: '2026-01-17'
+- name: Is Multichannel Access Useful for Timely Information Update?
+  id: is-multichannel-acce
+  description: ">\n    A research paper published in\n    Published in: IEEE Wireless\
+    \ Communications Letters <b>(WCL)</b>, vol. 10, no. 4, pp. 815-819, April 2021\n\
+    \    Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/9296962/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 4,
+    pp. 815-819, April 2021
+  added_date: '2026-01-17'
+- name: Practical NOMA-Based Coordinated Direct and Relay Transmission
+  id: practical-noma-based
+  description: ">\n    A research paper published in\n    Published in: IEEE Wireless\
+    \ Communications Letters <b>(WCL)</b>, vol. 10, no. 1, pp. 170-174, Jan. 2021\n\
+    \    Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/9200657/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 1,
+    pp. 170-174, Jan. 2021
+  added_date: '2026-01-17'
+- name: Sporadic Ultra-Time-Critical Crowd Messaging in V2X
+  id: sporadic-ultra-time-
+  description: ">\n    A research paper published in\n    Published in: IEEE Transactions\
+    \ on Communications <b>(TCom)</b>, vol. 69, no. 2, pp. 817-830, Feb. 2021\n  \
+    \  Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/9257442/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE Transactions on Communications <b>(TCom)</b>, vol. 69, no. 2,
+    pp. 817-830, Feb. 2021
+  added_date: '2026-01-17'
+- name: Software-Defined Radio Implementation of Age-of-Information-Oriented Random
+    Access
+  id: software-defined-rad
+  description: ">\n    A research paper published in\n    Published in: 2020 The 46th\
+    \ Annual Conference of the IEEE Industrial Electronics Society <b>(IECON)</b>,\
+    \ 2020, pp. 4374-4379.\n    Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/9254614/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: 2020 The 46th Annual Conference of the IEEE Industrial Electronics
+    Society <b>(IECON)</b>, 2020, pp. 4374-4379.
+  added_date: '2026-01-17'
+- name: 'Engineering Education for Sustainable Development and Global Citizenship:
+    A Course-level Implementation Case in Hong Kong'
+  id: engineering-educatio
+  description: ">\n    A research paper published in\n    Published in: 2018 ASEE\
+    \ Annual Conference and Exposition.\n    Source: Paper from Google Scholar"
+  link: https://peer.asee.org/engineering-education-for-sustainable-development-and-global-citizenship-a-course-level-implementation-case-in-hong-kong
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: 2018 ASEE Annual Conference and Exposition.
+  added_date: '2026-01-17'
+- name: 'Direct evidence of engineering students'' generic skills learning: From research
+    to practice in an undergraduate course in information engineering'
+  id: direct-evidence-of-e
+  description: ">\n    A research paper published in\n    Published in: 2017 IEEE\
+    \ Frontiers in Education Conference (FIE), 2017, pp. 1-5.\n    Source: Paper from\
+    \ Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/8190634/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: 2017 IEEE Frontiers in Education Conference (FIE), 2017, pp. 1-5.
+  added_date: '2026-01-17'
+- name: Coding of Multi-Source Information Streams With Age of Information Requirements
+  id: coding-of-multi-sour
+  description: ">\n    A research paper published in\n    Published in: IEEE Journal\
+    \ on Selected Areas in Communications <b>(JSAC)</b>, vol. 39, no. 5, pp. 1427-1440,\
+    \ May 2021\n    Source: Paper from Google Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/9374436/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol.
+    39, no. 5, pp. 1427-1440, May 2021
+  added_date: '2026-01-17'
+- name: 'Blender: Toward Practical Simulation Framework for BLE Neighbor Discovery'
+  id: blender-toward-pract
+  description: ">\n    A research paper published in\n    Published in: Proceedings\
+    \ of the 25th International ACM Conference on Modeling Analysis and Simulation\
+    \ of Wireless and Mobile Systems\n    Source: Paper from Google Scholar"
+  link: https://dl.acm.org/doi/abs/10.1145/3551659.3559052
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: Proceedings of the 25th International ACM Conference on Modeling Analysis
+    and Simulation of Wireless and Mobile Systems
+  added_date: '2026-01-17'
+- name: Age of Information with Joint Packet Coding in Industrial IoT
+  id: age-of-information-w
+  description: ">\n    A research paper published in\n    Published in: IEEE Wireless\
+    \ Communications Letters <b>(WCL)</b> (early access)\n    Source: Paper from Google\
+    \ Scholar"
+  link: https://ieeexplore.ieee.org/abstract/document/9514592/
+  image: /assets/img/icons/cuhk.png
+  tech: []
+  source: Google Scholar Paper
+  paper_source: IEEE Wireless Communications Letters <b>(WCL)</b> (early access)
+  added_date: '2026-01-17'
+- name: Test Paper for Differential Analysis
+  id: test-paper-for-diffe
+  description: ">\n    A test paper to verify differential analysis functionality\n\
+    \    Keywords: Test, Differential, Analysis\n    Published in: Test Journal, Vol.\
+    \ 1, No. 1, 2024\n    Source: Paper from Google Scholar\n    Key Contributions:\
+    \ This paper tests the differential analysis functionality of the update script..."
+  link: https://example.com/test-paper
+  image: /assets/img/icons/cuhk.png
+  tech:
+  - Test
+  - Differential
+  - Analysis
+  source: Google Scholar Paper
+  paper_source: Test Journal, Vol. 1, No. 1, 2024
+  added_date: '2026-01-17'
+  image_suggestion: A diagram showing differential analysis workflow

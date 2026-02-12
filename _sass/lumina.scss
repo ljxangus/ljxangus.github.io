@@ -1,0 +1,831 @@
+// ============================================
+// Lumina Theme - Modern Academic Website
+// ============================================
+
+// Color variables
+$lumina-bg: #f8fafc;              // slate-50
+$lumina-nav-bg: #0f172a;          // slate-900
+$lumina-nav-text: #e2e8f0;         // slate-200
+$lumina-accent: #0f766e;          // teal-700
+$lumina-accent-hover: #0d9488;    // teal-600
+$lumina-text: #1e293b;            // slate-800
+$lumina-text-muted: #64748b;      // slate-500
+$lumina-card-bg: #ffffff;
+$lumina-card-border: #f1f5f9;     // slate-100
+$lumina-card-hover-border: #ccfbf1; // teal-100
+
+// Typography
+$lumina-font-heading: 'Playfair Display', Georgia, serif;
+$lumina-font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Sidebar width
+$lumina-sidebar-width: 16rem;     // 256px
+$lumina-sidebar-width-mobile: 20rem; // 320px for mobile drawer
+
+// ============================================
+// Main Layout Structure
+// ============================================
+
+.lumina-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background-color: $lumina-bg;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+// ============================================
+// Sidebar Navigation
+// ============================================
+
+.lumina-sidebar {
+    width: $lumina-sidebar-width;
+    background: $lumina-nav-bg;
+    color: $lumina-nav-text;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+
+    // Custom scrollbar
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $lumina-nav-bg;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $lumina-text-muted;
+        border-radius: 3px;
+
+        &:hover {
+            background: $lumina-nav-text;
+        }
+    }
+
+    @media (max-width: 768px) {
+        transform: translateX(-100%);
+        z-index: 1050;
+        width: $lumina-sidebar-width-mobile;
+
+        &.open {
+            transform: translateX(0);
+        }
+    }
+}
+
+.lumina-sidebar-profile {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lumina-sidebar-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $lumina-accent;
+    margin-bottom: 1rem;
+}
+
+.lumina-sidebar-name {
+    font-family: $lumina-font-heading;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $lumina-nav-text;
+    margin-bottom: 0.25rem;
+}
+
+.lumina-sidebar-title {
+    font-family: $lumina-font-body;
+    font-size: 0.875rem;
+    color: $lumina-text-muted;
+    margin-bottom: 1rem;
+}
+
+.lumina-sidebar-nav {
+    padding: 1.5rem 0;
+}
+
+.lumina-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lumina-nav-item {
+    margin-bottom: 0.25rem;
+}
+
+.lumina-nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: $lumina-nav-text;
+    text-decoration: none;
+    font-family: $lumina-font-body;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.05);
+        color: $lumina-accent;
+        border-left-color: $lumina-accent;
+    }
+
+    &.active {
+        background: rgba($lumina-accent, 0.15);
+        color: $lumina-accent;
+        border-left-color: $lumina-accent;
+    }
+}
+
+.lumina-nav-icon {
+    width: 1.25rem;
+    margin-right: 0.75rem;
+    text-align: center;
+}
+
+.lumina-sidebar-footer {
+    padding: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.75rem;
+    color: $lumina-text-muted;
+    text-align: center;
+}
+
+.lumina-sidebar-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    a {
+        color: $lumina-nav-text;
+        font-size: 1.25rem;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $lumina-accent;
+        }
+    }
+}
+
+// ============================================
+// Main Content Area
+// ============================================
+
+.lumina-main {
+    margin-left: $lumina-sidebar-width;
+    flex: 1;
+    background: $lumina-bg;
+    min-height: 100vh;
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.lumina-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1.5rem 3rem;
+    }
+}
+
+// ============================================
+// Mobile Header & Toggle
+// ============================================
+
+.lumina-mobile-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: $lumina-nav-bg;
+    color: $lumina-nav-text;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.lumina-mobile-brand {
+    font-family: $lumina-font-heading;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $lumina-nav-text;
+    text-decoration: none;
+}
+
+.lumina-sidebar-toggle {
+    background: none;
+    border: none;
+    color: $lumina-nav-text;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lumina-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    @media (max-width: 768px) {
+        &.show {
+            display: block;
+        }
+    }
+}
+
+// ============================================
+// Card Component
+// ============================================
+
+.lumina-card {
+    background: $lumina-card-bg;
+    border-radius: 0.75rem;
+    border: 1px solid $lumina-card-border;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        border-color: $lumina-card-hover-border;
+    }
+}
+
+.lumina-card-title {
+    font-family: $lumina-font-heading;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $lumina-text;
+    margin-bottom: 1rem;
+}
+
+.lumina-card-subtitle {
+    font-family: $lumina-font-body;
+    font-size: 0.875rem;
+    color: $lumina-text-muted;
+    margin-bottom: 0.5rem;
+}
+
+.lumina-card-text {
+    font-family: $lumina-font-body;
+    font-size: 1rem;
+    color: $lumina-text;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+
+    p {
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// ============================================
+// Hero Section
+// ============================================
+
+.lumina-hero {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    margin-bottom: 2rem;
+}
+
+.lumina-hero-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid $lumina-accent;
+    margin-bottom: 1.5rem;
+}
+
+.lumina-hero-title {
+    font-family: $lumina-font-heading;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $lumina-text;
+    margin-bottom: 0.5rem;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+.lumina-hero-subtitle {
+    font-family: $lumina-font-body;
+    font-size: 1.125rem;
+    color: $lumina-text-muted;
+    margin-bottom: 1.5rem;
+}
+
+.lumina-hero-bio {
+    font-family: $lumina-font-body;
+    font-size: 1rem;
+    color: $lumina-text;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+// ============================================
+// Tags / Pills
+// ============================================
+
+.lumina-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.lumina-tag {
+    display: inline-block;
+    padding: 0.375rem 0.875rem;
+    background: rgba($lumina-accent, 0.1);
+    color: $lumina-accent;
+    border-radius: 9999px;
+    font-family: $lumina-font-body;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: rgba($lumina-accent, 0.2);
+    }
+}
+
+// ============================================
+// Section Headers
+// ============================================
+
+.lumina-section-title {
+    font-family: $lumina-font-heading;
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: $lumina-text;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid $lumina-accent;
+
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+.lumina-subsection-title {
+    font-family: $lumina-font-heading;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $lumina-text;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+// ============================================
+// Publication List Styles
+// ============================================
+
+.lumina-publication {
+    background: $lumina-card-bg;
+    border-radius: 0.75rem;
+    border: 1px solid $lumina-card-border;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        border-color: $lumina-card-hover-border;
+    }
+}
+
+.lumina-pub-title {
+    font-family: $lumina-font-body;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $lumina-text;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    a {
+        color: $lumina-text;
+        text-decoration: none;
+
+        &:hover {
+            color: $lumina-accent;
+        }
+    }
+}
+
+.lumina-pub-author {
+    font-family: $lumina-font-body;
+    font-size: 0.95rem;
+    color: $lumina-text-muted;
+    margin-bottom: 0.5rem;
+
+    .highlight {
+        color: $lumina-accent;
+        font-weight: 500;
+    }
+}
+
+.lumina-pub-source {
+    font-family: $lumina-font-body;
+    font-size: 0.9rem;
+    color: $lumina-text-muted;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.lumina-pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.lumina-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: $lumina-accent;
+    color: white !important;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: $lumina-font-body;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover {
+        background: $lumina-accent-hover;
+        color: white !important;
+        text-decoration: none;
+    }
+
+    i {
+        margin-right: 0.375rem;
+    }
+}
+
+.lumina-btn-outline {
+    background: transparent;
+    border: 1px solid $lumina-accent;
+    color: $lumina-accent !important;
+
+    &:hover {
+        background: $lumina-accent;
+        color: white !important;
+        text-decoration: none;
+    }
+}
+
+// ============================================
+// Project Grid
+// ============================================
+
+.lumina-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.lumina-project-card {
+    background: $lumina-card-bg;
+    border-radius: 0.75rem;
+    border: 1px solid $lumina-card-border;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border-color: $lumina-card-hover-border;
+        transform: translateY(-2px);
+    }
+}
+
+.lumina-project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.lumina-project-title {
+    font-family: $lumina-font-body;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $lumina-text;
+    margin-bottom: 0.5rem;
+
+    a {
+        color: $lumina-text;
+        text-decoration: none;
+
+        &:hover {
+            color: $lumina-accent;
+        }
+    }
+}
+
+.lumina-project-desc {
+    font-family: $lumina-font-body;
+    font-size: 0.95rem;
+    color: $lumina-text-muted;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.lumina-project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.lumina-tech-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+}
+
+// ============================================
+// News Cards
+// ============================================
+
+.lumina-news-card {
+    background: $lumina-card-bg;
+    border-radius: 0.75rem;
+    border: 1px solid $lumina-card-border;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: $lumina-card-hover-border;
+    }
+}
+
+.lumina-news-date {
+    font-family: $lumina-font-body;
+    font-size: 0.875rem;
+    color: $lumina-accent;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.lumina-news-headline {
+    font-family: $lumina-font-body;
+    font-size: 1rem;
+    color: $lumina-text;
+    line-height: 1.6;
+}
+
+.lumina-news-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: $lumina-accent;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// ============================================
+// Footer
+// ============================================
+
+.lumina-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid $lumina-card-border;
+    text-align: center;
+    font-family: $lumina-font-body;
+    font-size: 0.875rem;
+    color: $lumina-text-muted;
+}
+
+.lumina-footer-text {
+    margin-bottom: 0.5rem;
+}
+
+.lumina-footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.75rem;
+
+    a {
+        color: $lumina-text-muted;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $lumina-accent;
+        }
+    }
+}
+
+// ============================================
+// Markdown Content Styles
+// ============================================
+
+.lumina-markdown {
+    font-family: $lumina-font-body;
+    color: $lumina-text;
+    line-height: 1.8;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $lumina-font-heading;
+        font-weight: 600;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: $lumina-text;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: $lumina-accent;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s ease;
+
+        &:hover {
+            border-bottom-color: $lumina-accent;
+        }
+    }
+
+    ul, ol {
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    code {
+        background: rgba($lumina-accent, 0.1);
+        color: $lumina-accent;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.25rem;
+        font-size: 0.9em;
+    }
+
+    pre {
+        background: #1e293b;
+        color: #e2e8f0;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+        margin-bottom: 1rem;
+
+        code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+    }
+
+    blockquote {
+        border-left: 4px solid $lumina-accent;
+        padding-left: 1rem;
+        margin-left: 0;
+        color: $lumina-text-muted;
+        font-style: italic;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
+
+    th, td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid $lumina-card-border;
+    }
+
+    th {
+        font-weight: 600;
+        background: rgba($lumina-accent, 0.05);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+}
+
+// ============================================
+// Responsive Utilities
+// ============================================
+
+@media (max-width: 768px) {
+    .lumina-hero-avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .lumina-hero-title {
+        font-size: 2rem;
+    }
+
+    .lumina-card {
+        padding: 1.25rem;
+    }
+
+    .lumina-pub-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .lumina-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+// ============================================
+// Blog Card Styles
+// ============================================
+
+.lumina-card .lumina-btn {
+    margin-top: 1rem;
+}
+
+// ============================================
+// Animations
+// ============================================
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lumina-fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}

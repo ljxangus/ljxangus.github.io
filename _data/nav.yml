@@ -1,20 +1,26 @@
 nav_list_title: Navigation List
 links:
 
+- title: Home
+  url: index.html
+  icon: fas fa-home
+
 - title: Blog
   url: blog.html
+  icon: fas fa-blog
 
-# - title: Home
-#   url: index.html
-
-- title: Bio
-  url: bio.html
+# - title: Bio
+#   url: bio.html
+#   icon: fas fa-user
 
 - title: Publications
   url: publications.html
+  icon: fas fa-book
 
 - title: Projects
   url: projects.html
+  icon: fas fa-code
 
 - title: News
   url: news.html
+  icon: fas fa-newspaper

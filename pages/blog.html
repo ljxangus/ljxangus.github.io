@@ -7,6 +7,44 @@ header-img:
 last-updated: 2022-10-17 5:55 PM
 ---
 
+{% if site.ui_theme == 'lumina' %}
+<!-- Lumina Theme Blog Layout -->
+<style>
+  .highlighted {
+    color: #0f766e;
+    text-decoration: none;
+    border-bottom: 1px dashed #0f766e;
+  }
+  .highlighted:hover {
+    border-bottom-style: solid;
+  }
+</style>
+
+{% for post in site.posts %}
+  {% if post.path contains '/projects/' %}{% continue %}{% endif %}
+  <article class="lumina-card">
+    <h2 class="lumina-card-title">
+      <a href="{{ post.url }}" style="color: #1e293b; text-decoration: none;">{{ post.title }}</a>
+    </h2>
+    {% if post.tag %}
+    <span class="lumina-tag">{{ post.tag }}</span>
+    {% endif %}
+    {% if post.date %}
+    <p style="color: #64748b; font-size: 0.875rem;">{{ post.date | date: "%B %d, %Y" }}</p>
+    {% endif %}
+    <div class="lumina-card-text">
+      {{ post.description }}
+    </div>
+    {% if post.lead %}
+    <p style="color: #64748b; font-style: italic;">{{ post.lead }}</p>
+    {% endif %}
+    <a href="{{ post.url }}" class="lumina-btn lumina-btn-outline">Read more →</a>
+  </article>
+{% endfor %}
+
+{% else %}
+<!-- Original Dumbarton Blog Layout -->
+
 <!-- Page Content -->
   {% if site.twitter-widget %}
   <div class="row">
@@ -44,3 +82,5 @@ last-updated: 2022-10-17 5:55 PM
       </div>
     </div>
   {% endif %}
+
+{% endif %}

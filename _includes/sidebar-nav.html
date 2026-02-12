@@ -1,0 +1,110 @@
+{% assign theme = site.data.themes[site.ui_theme] %}
+
+<!-- Mobile Header -->
+<div class="lumina-mobile-header">
+    <a href="/" class="lumina-mobile-brand">{{ site.title }}</a>
+    <button class="lumina-sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+</div>
+
+<!-- Mobile Overlay -->
+<div class="lumina-overlay" id="sidebarOverlay"></div>
+
+<!-- Sidebar -->
+<aside class="lumina-sidebar" id="sidebar">
+    <!-- Profile Section -->
+    <div class="lumina-sidebar-profile">
+        {% if site.profile_image %}
+        <img src="{{ site.profile_image }}" alt="{{ site.author }}" class="lumina-sidebar-avatar">
+        {% endif %}
+        <h2 class="lumina-sidebar-name">{{ site.author }}</h2>
+        {% if site.occupation %}
+        <p class="lumina-sidebar-title">{{ site.occupation }}</p>
+        {% endif %}
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="lumina-sidebar-nav">
+        <ul class="lumina-nav-list">
+            {% for item in site.data.nav.links %}
+            <li class="lumina-nav-item">
+                <a href="{{ item.url }}" class="lumina-nav-link">
+                    {% if item.icon %}
+                    <span class="lumina-nav-icon"><i class="{{ item.icon }}"></i></span>
+                    {% endif %}
+                    <span>{{ item.title }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <!-- Social Links -->
+    <div class="lumina-sidebar-footer">
+        <div class="lumina-sidebar-social">
+            {% if site.github %}
+            <a href="https://github.com/{{ site.github }}" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            {% endif %}
+            {% if site.linkedin %}
+            <a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            {% endif %}
+            {% if site.email %}
+            <a href="mailto:{{ site.email }}" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            {% endif %}
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.7rem;">© {{ "now" | date: "%Y" }}</p>
+    </div>
+</aside>
+
+<script>
+// Sidebar toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebar = document.getElementById('sidebar');
+    const toggle = document.getElementById('sidebarToggle');
+    const overlay = document.getElementById('sidebarOverlay');
+
+    function toggleSidebar() {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('show');
+    }
+
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('show');
+    }
+
+    if (toggle) {
+        toggle.addEventListener('click', toggleSidebar);
+    }
+
+    if (overlay) {
+        overlay.addEventListener('click', closeSidebar);
+    }
+
+    // Close sidebar when clicking a navigation link on mobile
+    const navLinks = document.querySelectorAll('.lumina-nav-link');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                closeSidebar();
+            }
+        });
+    });
+
+    // Set active link based on current URL
+    const currentPath = window.location.pathname;
+    navLinks.forEach(function(link) {
+        const linkPath = new URL(link.href).pathname;
+        if (currentPath === linkPath || (currentPath === '/' && linkPath === '/index.html')) {
+            link.classList.add('active');
+        }
+    });
+});
+</script>

@@ -1,6 +1,10 @@
+// Import Lumina theme styles (always import since it's the default theme)
+@import 'lumina';
+
+// Original styles (for backward compatibility)
 .title {
   font-style: italic;
-} 
+}
 
 .author {
   a {
@@ -10,7 +14,7 @@
         text-decoration: none;
     }
   }
-
+}
 
 .dropdown-toggle::after {
   display: none;

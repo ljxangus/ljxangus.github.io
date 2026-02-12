@@ -4,6 +4,32 @@ layout: page
 permalink: news.html
 ---
 
+{% if site.ui_theme == 'lumina' %}
+<!-- Lumina Theme News Layout -->
+<style>
+  .highlighted {
+    color: #0f766e;
+    text-decoration: none;
+    border-bottom: 1px dashed #0f766e;
+  }
+  .highlighted:hover {
+    border-bottom-style: solid;
+  }
+</style>
+
+{% for information in site.data.news %}
+<article class="lumina-news-card">
+  <div class="lumina-news-date">{{ information.date }}</div>
+  <div class="lumina-news-headline">{{ information.headline }}</div>
+  {% if information.link %}
+  <a href="{{ information.link }}" class="lumina-news-link">Read more →</a>
+  {% endif %}
+</article>
+{% endfor %}
+
+{% else %}
+<!-- Original Dumbarton News Layout -->
+
 {% assign theme = site.data.themes[site.ui_theme] %}
 <div class="blogcard  card-1 mb-4" style="width: 100%;">
   <div class="card-body">
@@ -23,3 +49,5 @@ permalink: news.html
 </div>
 
 {% endfor %}
+
+{% endif %}

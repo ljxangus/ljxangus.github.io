@@ -1,168 +1,207 @@
-- title: "Minimizing Age of Collection for Multiple Access in Wireless Industrial Internet of Things"
-  author: "<em><b>J. Liang</b></em>, T.T. Chan, H. Pan"
-  source: "IEEE Internet of Things Journal <b>(IoTJ)</b>, Volume: 11, Issue: 2, 15 January 2024"
+- author: H. Pan, <b>J. Liang</b>, S. C. Liew, V. C. M. Leung and J. Li
+  title: Timely Information Update With Nonorthogonal Multiple Access
+  source: IEEE Transactions on Industrial Informatics <b>(TII)</b>, vol. 17, no. 6,
+    pp. 4096-4106, June 2021
   type: journal
-  pdf: "https://arxiv.org/pdf/2304.04528"
-  html: "https://ieeexplore.ieee.org/abstract/document/10175510"
-  showFront: true
-
-- title: "Accelerating BLE Neighbor Discovery via Wi-Fi Fingerprints"
-  author: "T. Li, B. Hu, G. Tu, J. Shuai, <em><b>J. Liang</b></em>, Y. Ding, Z. Li, K. Xu"
-  source: "IEEE <b>INFOCOM</b> 2023-IEEE Conference on Computer Communications Workshops <b>(INFOCOM WKSHPS)</b>"
-  type: conference
-  pdf: "https://www.researchgate.net/profile/Tong-Li-34/publication/373500073_Accelerating_BLE_Neighbor_Discovery_via_Wi-Fi_Fingerprints/links/64feb2eb25ee6b7564df0d84/Accelerating-BLE-Neighbor-Discovery-via-Wi-Fi-Fingerprints.pdf"
-  html: "https://ieeexplore.ieee.org/abstract/document/10225984/"
+  pdf: null
+  html: https://ieeexplore.ieee.org/abstract/document/9130084/
   showFront: false
-
-- title: "On design and performance of offline finding network"
-  author: "T. Li, <em><b>J. Liang</b></em>*, Y. Ding, K. Zheng, X. Zhang, K. Xu"
-  source: "IEEE <b>INFOCOM</b> 2023-IEEE Conference on Computer Communications, 1-10"
-  type: conference
-  pdf: "http://iir.ruc.edu.cn/~litong/papers/On%20Design%20and%20Performance%20of%20Offline%20Finding%20Network.pdf"
-  html: "https://ieeexplore.ieee.org/abstract/document/10228880/"
-  showFront: true
-  remark: "* Corresponding author"
-
-- title: "Blender: Toward Practical Simulation Framework for BLE Neighbor Discovery"
-  author: "Y. Ding, T. Li, <em><b>J. Liang</b></em> and D. Wang"
-  source: "Proceedings of the 25th International ACM Conference on Modeling Analysis and Simulation of Wireless and Mobile Systems"
-  type: conference
-  pdf: "http://iir.ruc.edu.cn/~litong/papers/Blender_%20Toward%20Practical%20Simulation%20Framework%20for%20BLE%20Neighbor%20Discovery.pdf"
-  html: "https://dl.acm.org/doi/abs/10.1145/3551659.3559052"
-  showFront: false
-
-- title: "Age of Information in SIC-based Non-Orthogonal Multiple Access"
-  author: "Q. Ren, T.T. Chan, <em><b>J. Liang</b></em> and H. Pan"
-  source: "IEEE WCNC 2022"
-  type: conference
-  pdf: "https://www.researchgate.net/profile/Tse-Tin-Chan/publication/357113757_Age_of_Information_in_SIC-based_Non-Orthogonal_Multiple_Access/links/61d468ded4500608168afa3a/Age-of-Information-in-SIC-based-Non-Orthogonal-Multiple-Access.pdf"
-  html: "https://ieeexplore.ieee.org/abstract/document/9771565"
-  showFront: false
-
-- title: "Timely status update: Should ARQ be used in two-hop networks?"
-  author: "J. Feng, H. Pan, T.T. Chan and <em><b>J. Liang</b></em>"
-  source: "IEEE ICC 2022"
-  type: conference
-  pdf: "https://arxiv.org/pdf/2201.10253.pdf"
-  html: "https://ieeexplore.ieee.org/document/9838745"
-  showFront: false
-
-- title: "DNN-aided Low-complexity Physical-layer Network Coding Enabled Non-orthogonal Multiple Access"
-  author: "G. Chen, T.T. Chan, H. Pan and <em><b>J. Liang</b></em>"
-  source: "2022 IEEE 19th Annual Consumer Communications & Networking Conference (CCNC)"
-  type: conference
-  pdf: "https://www.researchgate.net/profile/Tse-Tin-Chan/publication/355984546_DNN-aided_Low-complexity_Physical-layer_Network_Coding_Enabled_Non-orthogonal_Multiple_Access/links/61967b5bd7d1af224b04514a/DNN-aided-Low-complexity-Physical-layer-Network-Coding-Enabled-Non-orthogonal-Multiple-Access.pdf"
-  html: "https://ieeexplore.ieee.org/abstract/document/9700575/"
-  showFront: false
-
-- title: "ROFA: An OFDMA system for Ultra-Reliable Wireless Industrial Networking"
-  author: "<em><b>J. Liang</b></em>, and S. C. Liew"
-  source: arXiv preprint arXiv:2109.00979, submitted to IEEE Transactions on Mobile Computing <b>(TMC)</b>
+- title: Design and implementation of time-sensitive wireless IoT networks on software-defined
+    radio
+  author: J Liang, H Chen, SC Liew
+  source: 'IEEE Internet of Things Journal 9 (3), 2361-2374, 2021, '
   type: journal
-  pdf: "https://arxiv.org/pdf/2109.00979"
-  html: "https://arxiv.org/abs/2109.00979"
+  html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:5nxA0vEk-isC
+  pdf: ''
   showFront: false
-
-- author: "<b>J. Liang</b>, H. Chen and S. C. Liew"
-  title: "Design and Implementation ofTime-Sensitive Wireless IoT Networks on Software-Defined Radio" 
-  source: IEEE Internet of Things Journal <b>(IoTJ)</b>, July 2021 (early access)
+- title: 'ROFA: An OFDMA system for Ultra-Reliable Wireless Industrial Networking'
+  author: <em><b>J. Liang</b></em>, and S. C. Liew
+  source: arXiv preprint arXiv:2109.00979, submitted to IEEE Transactions on Mobile
+    Computing <b>(TMC)</b>
   type: journal
-  pdf: "https://arxiv.org/pdf/2006.09970"
-  html: "https://ieeexplore.ieee.org/document/9480604"
-  showFront: true
-
-- author: "<b>J. Liang</b>, H. Pan and S. C. Liew"
-  title: "Is Multichannel Access Useful for Timely Information Update?" 
-  source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 4, pp. 815-819, April 2021
-  type: journal
-  pdf: "https://arxiv.org/pdf/2007.12136"
-  html: "https://ieeexplore.ieee.org/abstract/document/9296962/"
+  pdf: https://arxiv.org/pdf/2109.00979
+  html: https://arxiv.org/abs/2109.00979
   showFront: false
-
-- author: "H. Pan, <b>J. Liang</b>, S. C. Liew, V. C. M. Leung and J. Li"
-  title: "Timely Information Update With Nonorthogonal Multiple Access" 
-  source: IEEE Transactions on Industrial Informatics <b>(TII)</b>, vol. 17, no. 6, pp. 4096-4106, June 2021
-  type: journal
-  pdf:
-  html: "https://ieeexplore.ieee.org/abstract/document/9130084/"
-  showFront: false
-
-- author: "H. Pan, <b>J. Liang</b> and S. C. Liew"
-  title: "Practical NOMA-Based Coordinated Direct and Relay Transmission" 
-  source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 1, pp. 170-174, Jan. 2021
-  type: journal
-  pdf:
-  html: "https://ieeexplore.ieee.org/abstract/document/9200657/"
-  showFront: false
-
-- author: "H. Pan, S. C. Liew, <b>J. Liang</b>, V. C. M. Leung and J. Li"
-  title: "Coding of Multi-Source Information Streams With Age of Information Requirements"
-  source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol. 39, no. 5, pp. 1427-1440, May 2021
-  type: journal
-  pdf:
-  html: "https://ieeexplore.ieee.org/abstract/document/9374436/"
-  showFront: true
-
-- author: "Y. Shao, S. C. Liew and <b>J. Liang</b>"
-  title: "Sporadic Ultra-Time-Critical Crowd Messaging in V2X" 
-  source: IEEE Transactions on Communications <b>(TCom)</b>, vol. 69, no. 2, pp. 817-830, Feb. 2021
-  type: journal
-  pdf: "https://arxiv.org/pdf/2003.01906"
-  html: "https://ieeexplore.ieee.org/abstract/document/9257442/"
-
 - title: Network-coded multiple access on unmanned aerial vehicle
   author: H. Pan, S.C. Liew, <b>J. Liang</b>, Y. Shao, L. Lu
-  source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol. 36, no. 9, pp. 2071-2086, Sept. 2018
+  source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol. 36,
+    no. 9, pp. 2071-2086, Sept. 2018
   type: journal
-  pdf:
-  html: "https://ieeexplore.ieee.org/abstract/document/8432498/"
+  pdf: null
+  html: https://ieeexplore.ieee.org/abstract/document/8432498/
   showFront: false
-
-- author: "T. -T. Chan, H. Pan and <b>J. Liang</b>"
-  title: "Age of Information with Joint Packet Coding in Industrial IoT"
-  source: IEEE Wireless Communications Letters <b>(WCL)</b> (early access)
+- title: Toward optimal broadcast mode in offline finding network
+  author: T Li, Y Ding, J Liang, K Zheng, X Zhang, T Pan, D Wang, K Xu
+  source: 'IEEE Transactions on Mobile Computing, 2025, '
   type: journal
-  pdf:
-  html: "https://ieeexplore.ieee.org/abstract/document/9514592/"
+  html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:dhFuZR0502QC
+  pdf: ''
   showFront: false
-
-- author: Z. Han*, <b>J. Liang</b>*, Y. Gu and H. Chen
-  title: "Software-Defined Radio Implementation of Age-of-Information-Oriented Random Access"
-  source: 2020 The 46th Annual Conference of the IEEE Industrial Electronics Society <b>(IECON)</b>, 2020, pp. 4374-4379.
-  remark: "* Two authors have the same contributions"
+- title: Minimizing Age of Collection for Multiple Access in Wireless Industrial Internet
+    of Things
+  author: <em><b>J. Liang</b></em>, T.T. Chan, H. Pan
+  source: 'IEEE Internet of Things Journal <b>(IoTJ)</b>, Volume: 11, Issue: 2, 15
+    January 2024'
+  type: journal
+  pdf: https://arxiv.org/pdf/2304.04528
+  html: https://ieeexplore.ieee.org/abstract/document/10175510
+  showFront: true
+- title: Accelerating BLE Neighbor Discovery via Wi-Fi Fingerprints
+  author: T. Li, B. Hu, G. Tu, J. Shuai, <em><b>J. Liang</b></em>, Y. Ding, Z. Li,
+    K. Xu
+  source: IEEE <b>INFOCOM</b> 2023-IEEE Conference on Computer Communications Workshops
+    <b>(INFOCOM WKSHPS)</b>
   type: conference
-  pdf: "https://arxiv.org/pdf/2003.14329"
-  html: "https://ieeexplore.ieee.org/abstract/document/9254614/"
+  pdf: https://www.researchgate.net/profile/Tong-Li-34/publication/373500073_Accelerating_BLE_Neighbor_Discovery_via_Wi-Fi_Fingerprints/links/64feb2eb25ee6b7564df0d84/Accelerating-BLE-Neighbor-Discovery-via-Wi-Fi-Fingerprints.pdf
+  html: https://ieeexplore.ieee.org/abstract/document/10225984/
   showFront: false
-
+- title: On design and performance of offline finding network
+  author: T. Li, <em><b>J. Liang</b></em>*, Y. Ding, K. Zheng, X. Zhang, K. Xu
+  source: IEEE <b>INFOCOM</b> 2023-IEEE Conference on Computer Communications, 1-10
+  type: conference
+  pdf: http://iir.ruc.edu.cn/~litong/papers/On%20Design%20and%20Performance%20of%20Offline%20Finding%20Network.pdf
+  html: https://ieeexplore.ieee.org/abstract/document/10228880/
+  showFront: true
+  remark: '* Corresponding author'
+- title: 'Age of information in multichannel Slotted ALOHA: Should collided users
+    send first?'
+  author: Y Lai, TT Chan, J Liang, H Pan
+  source: '2023 IEEE 13th Annual Computing and Communication Workshop and Conference …,
+    2023, '
+  type: conference
+  html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:9ZlFYXVOiuMC
+  pdf: ''
+  showFront: false
+- title: Age of Information in SIC-based Non-Orthogonal Multiple Access
+  author: Q. Ren, T.T. Chan, <em><b>J. Liang</b></em> and H. Pan
+  source: IEEE WCNC 2022
+  type: conference
+  pdf: https://www.researchgate.net/profile/Tse-Tin-Chan/publication/357113757_Age_of_Information_in_SIC-based_Non-Orthogonal_Multiple_Access/links/61d468ded4500608168afa3a/Age-of-Information-in-SIC-based-Non-Orthogonal-Multiple-Access.pdf
+  html: https://ieeexplore.ieee.org/abstract/document/9771565
+  showFront: false
+- title: 'Timely status update: Should ARQ be used in two-hop networks?'
+  author: J. Feng, H. Pan, T.T. Chan and <em><b>J. Liang</b></em>
+  source: IEEE ICC 2022
+  type: conference
+  pdf: https://arxiv.org/pdf/2201.10253.pdf
+  html: https://ieeexplore.ieee.org/document/9838745
+  showFront: false
+- title: DNN-aided Low-complexity Physical-layer Network Coding Enabled Non-orthogonal
+    Multiple Access
+  author: G. Chen, T.T. Chan, H. Pan and <em><b>J. Liang</b></em>
+  source: 2022 IEEE 19th Annual Consumer Communications & Networking Conference (CCNC)
+  type: conference
+  pdf: https://www.researchgate.net/profile/Tse-Tin-Chan/publication/355984546_DNN-aided_Low-complexity_Physical-layer_Network_Coding_Enabled_Non-orthogonal_Multiple_Access/links/61967b5bd7d1af224b04514a/DNN-aided-Low-complexity-Physical-layer-Network-Coding-Enabled-Non-orthogonal-Multiple-Access.pdf
+  html: https://ieeexplore.ieee.org/abstract/document/9700575/
+  showFront: false
+- title: Age of information in SIC-based non-orthogonal multiple access
+  author: Q Ren, TT Chan, J Liang, H Pan
+  source: '2022 IEEE Wireless Communications and Networking Conference (WCNC), 800-805,
+    2022, '
+  type: conference
+  html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:aqlVkmm33-oC
+  pdf: ''
+  showFront: false
+- author: <b>J. Liang</b>, H. Chen and S. C. Liew
+  title: Design and Implementation ofTime-Sensitive Wireless IoT Networks on Software-Defined
+    Radio
+  source: IEEE Internet of Things Journal <b>(IoTJ)</b>, July 2021 (early access)
+  type: journal
+  pdf: https://arxiv.org/pdf/2006.09970
+  html: https://ieeexplore.ieee.org/document/9480604
+  showFront: true
+- author: <b>J. Liang</b>, H. Pan and S. C. Liew
+  title: Is Multichannel Access Useful for Timely Information Update?
+  source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 4, pp. 815-819,
+    April 2021
+  type: journal
+  pdf: https://arxiv.org/pdf/2007.12136
+  html: https://ieeexplore.ieee.org/abstract/document/9296962/
+  showFront: false
+- author: H. Pan, <b>J. Liang</b> and S. C. Liew
+  title: Practical NOMA-Based Coordinated Direct and Relay Transmission
+  source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 1, pp. 170-174,
+    Jan. 2021
+  type: journal
+  pdf: null
+  html: https://ieeexplore.ieee.org/abstract/document/9200657/
+  showFront: false
 - author: Y. Shao, S. C. Liew and <b>J. Liang</b>
-  title: "Sporadic Ultra-Time-Critical Messaging in V2X"
-  source: 2018 IEEE International Conference on Communications <b>(ICC)</b>, 2018, pp. 1-7.
+  title: Sporadic Ultra-Time-Critical Crowd Messaging in V2X
+  source: IEEE Transactions on Communications <b>(TCom)</b>, vol. 69, no. 2, pp. 817-830,
+    Feb. 2021
+  type: journal
+  pdf: https://arxiv.org/pdf/2003.01906
+  html: https://ieeexplore.ieee.org/abstract/document/9257442/
+- author: Z. Han*, <b>J. Liang</b>*, Y. Gu and H. Chen
+  title: Software-Defined Radio Implementation of Age-of-Information-Oriented Random
+    Access
+  source: 2020 The 46th Annual Conference of the IEEE Industrial Electronics Society
+    <b>(IECON)</b>, 2020, pp. 4374-4379.
+  remark: '* Two authors have the same contributions'
   type: conference
-  pdf:
-  html: "https://ieeexplore.ieee.org/abstract/document/8422978/"
+  pdf: https://arxiv.org/pdf/2003.14329
+  html: https://ieeexplore.ieee.org/abstract/document/9254614/
   showFront: false
-
-- author: R. Y. Chan, C. K. Chan, M. Tahernia, <b>J. Liang</b> and Q. Cao, 
-  title: "Engineering Education for Sustainable Development and Global Citizenship: A Course-level Implementation Case in Hong Kong"
+- author: Y. Shao, S. C. Liew and <b>J. Liang</b>
+  title: Sporadic Ultra-Time-Critical Messaging in V2X
+  source: 2018 IEEE International Conference on Communications <b>(ICC)</b>, 2018,
+    pp. 1-7.
+  type: conference
+  pdf: null
+  html: https://ieeexplore.ieee.org/abstract/document/8422978/
+  showFront: false
+- author: R. Y. Chan, C. K. Chan, M. Tahernia, <b>J. Liang</b> and Q. Cao,
+  title: 'Engineering Education for Sustainable Development and Global Citizenship:
+    A Course-level Implementation Case in Hong Kong'
   source: 2018 ASEE Annual Conference and Exposition.
   type: conference
-  pdf:
-  html: "https://peer.asee.org/engineering-education-for-sustainable-development-and-global-citizenship-a-course-level-implementation-case-in-hong-kong"
+  pdf: null
+  html: https://peer.asee.org/engineering-education-for-sustainable-development-and-global-citizenship-a-course-level-implementation-case-in-hong-kong
   showFront: false
-
-- author: R. Y. Chan, C. K. Chan, C. Lau, <b>J. Liang</b>, H. Huang, Q. Cao and M. Tahernia
-  title: "Direct evidence of engineering students' generic skills learning: From research to practice in an undergraduate course in information engineering"
+- title: Sporadic ultra-time-critical messaging in V2X
+  author: Y Shao, SC Liew, J Liang
+  source: '2018 IEEE International Conference on Communications (ICC), 1-7, 2018, '
+  type: conference
+  html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:_FxGoFyzp5QC
+  pdf: ''
+  showFront: false
+- author: R. Y. Chan, C. K. Chan, C. Lau, <b>J. Liang</b>, H. Huang, Q. Cao and M.
+    Tahernia
+  title: 'Direct evidence of engineering students'' generic skills learning: From
+    research to practice in an undergraduate course in information engineering'
   source: 2017 IEEE Frontiers in Education Conference (FIE), 2017, pp. 1-5.
   type: conference
-  pdf:
-  html: "https://ieeexplore.ieee.org/abstract/document/8190634/"
+  pdf: null
+  html: https://ieeexplore.ieee.org/abstract/document/8190634/
   showFront: false
-
-- title:
-  author:
-  source:
-  type:
-  pdf:
-  html:
-  showFront:
+- author: H. Pan, S. C. Liew, <b>J. Liang</b>, V. C. M. Leung and J. Li
+  title: Coding of Multi-Source Information Streams With Age of Information Requirements
+  source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol. 39,
+    no. 5, pp. 1427-1440, May 2021
+  type: journal
+  pdf: null
+  html: https://ieeexplore.ieee.org/abstract/document/9374436/
+  showFront: true
+- title: 'Blender: Toward Practical Simulation Framework for BLE Neighbor Discovery'
+  author: Y. Ding, T. Li, <em><b>J. Liang</b></em> and D. Wang
+  source: Proceedings of the 25th International ACM Conference on Modeling Analysis
+    and Simulation of Wireless and Mobile Systems
+  type: conference
+  pdf: http://iir.ruc.edu.cn/~litong/papers/Blender_%20Toward%20Practical%20Simulation%20Framework%20for%20BLE%20Neighbor%20Discovery.pdf
+  html: https://dl.acm.org/doi/abs/10.1145/3551659.3559052
+  showFront: false
+- author: T. -T. Chan, H. Pan and <b>J. Liang</b>
+  title: Age of Information with Joint Packet Coding in Industrial IoT
+  source: IEEE Wireless Communications Letters <b>(WCL)</b> (early access)
+  type: journal
+  pdf: null
+  html: https://ieeexplore.ieee.org/abstract/document/9514592/
+  showFront: false
+- title: null
+  author: null
+  source: null
+  type: null
+  pdf: null
+  html: null
+  showFront: null

@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 {% assign theme = site.data.themes[site.ui_theme] %}
-<html>
+<html lang="en">
   {% include head.html %}
-  <body style="background-color:{{theme.background-color}};">
-    {% include nav.html %}
-    <div class="dumbarton-spacer-sm"></div>
-    <div class="container">
-      {{ content }}
-    </div>
-    <div class="dumbarton-spacer" ></div>
-    {% include footer.html %}
+  <body>
+    {% if site.ui_theme == 'lumina' %}
+      <!-- Lumina Theme Layout -->
+      <div class="lumina-wrapper">
+        {% include sidebar-nav.html %}
+        <main class="lumina-main">
+          <div class="lumina-content-wrapper">
+            {{ content }}
+          </div>
+          {% include footer.html %}
+        </main>
+      </div>
+    {% else %}
+      <!-- Original Dumbarton Theme Layout -->
+      <body style="background-color:{{theme.background-color}};">
+        {% include nav.html %}
+        <div class="dumbarton-spacer-sm"></div>
+        <div class="container">
+          {{ content }}
+        </div>
+        <div class="dumbarton-spacer" ></div>
+        {% include footer.html %}
+    {% endif %}
   </body>
 </html>
