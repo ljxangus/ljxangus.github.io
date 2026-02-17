@@ -1,14 +1,12 @@
 ---
 layout: page
-permalink: /publications.html
 title: Publications
-header-img:
-last-updated: 2020-10-30 5:55 PM
+description: A collection of my research publications in journals and conferences
+permalink: publications.html
 ---
-{% assign theme = site.data.themes[site.ui_theme] %}
 
 {% if site.ui_theme == 'lumina' %}
-<!-- Lumina Theme Publications Layout -->
+<!-- Lumina Theme Publications Layout with Timeline -->
 <style>
   .highlighted {
     color: #0f766e;
@@ -18,127 +16,385 @@ last-updated: 2020-10-30 5:55 PM
   .highlighted:hover {
     border-bottom-style: solid;
   }
+
+  /* Filter Tabs */
+  .lumina-filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .lumina-filter-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #64748b;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  .lumina-filter-tab:hover {
+    color: #1e293b;
+  }
+
+  .lumina-filter-tab.active {
+    color: #0f766e;
+  }
+
+  .lumina-filter-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #0d9488;
+    border-radius: 2px 2px 0 0;
+  }
+
+  /* Timeline Styles */
+  .lumina-timeline {
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .lumina-timeline-year {
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+
+  .lumina-year-header {
+    position: sticky;
+    top: 0;
+    background: rgba(248, 250, 252, 0.95);
+    backdrop-filter: blur(4px);
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+    z-index: 10;
+  }
+
+  .lumina-year-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #cbd5e1;
+  }
+
+  .lumina-timeline-content {
+    position: relative;
+    padding-left: 1rem;
+    margin-left: 0.5rem;
+    border-left: 2px solid #e2e8f0;
+  }
+
+  .lumina-timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .lumina-timeline-dot {
+    position: absolute;
+    left: -1.5625rem;
+    top: 0.75rem;
+    width: 1rem;
+    height: 1rem;
+    background: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .lumina-timeline-item:hover .lumina-timeline-dot {
+    border-color: #0f766e;
+    box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.1);
+  }
+
+  .lumina-pub-card {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+  }
+
+  .lumina-pub-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: #ccfbf1;
+  }
+
+  .lumina-pub-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  .lumina-pub-card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .lumina-pub-card:hover .lumina-pub-card-title a {
+    color: #0f766e;
+  }
+
+  .lumina-pub-card-authors {
+    color: #64748b;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  .lumina-pub-card-authors b,
+  .lumina-pub-card-authors strong {
+    font-weight: 600;
+    color: #1e293b;
+  }
+
+  .lumina-pub-card-venue {
+    color: #475569;
+    font-size: 0.875rem;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+  }
+
+  .lumina-pub-type-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-left: 0.5rem;
+  }
+
+  .lumina-pub-actions {
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
+    border-top: 1px solid #f8fafc;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+
+  .lumina-pub-card:hover .lumina-pub-actions {
+    opacity: 1;
+  }
+
+  .lumina-pub-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #64748b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .lumina-pub-action-btn:hover {
+    color: #0f766e;
+  }
+
+  .lumina-hidden {
+    display: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .lumina-filter-tabs {
+      gap: 0.25rem;
+    }
+
+    .lumina-filter-tab {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8125rem;
+    }
+
+    .lumina-year-title {
+      font-size: 1.5rem;
+    }
+
+    .lumina-timeline-content {
+      padding-left: 0;
+      margin-left: 0;
+      border-left: none;
+    }
+
+    .lumina-timeline-dot {
+      display: none;
+    }
+
+    .lumina-pub-card {
+      padding: 1rem;
+    }
+  }
 </style>
 
-<!-- Journal Publications -->
-{% assign journals = site.data.publist | where: "type", "journal" %}
-{% if journals.size > 0 %}
-<h2 class="lumina-section-title">Journal Articles</h2>
-{% for paper in journals %}
-<div class="lumina-publication">
-  <div class="lumina-pub-title">
-    {% if paper.html %}
-    <a href="{{ paper.html }}" target="_blank">{{ paper.title }}</a>
-    {% else %}
-    {{ paper.title }}
-    {% endif %}
+<!-- Publications Container -->
+<div id="lumina-publications-container">
+  <!-- Filter Tabs -->
+  <div class="lumina-filter-tabs">
+    <button class="lumina-filter-tab active" data-filter="all">All</button>
+    <button class="lumina-filter-tab" data-filter="journal">Journal Articles</button>
+    <button class="lumina-filter-tab" data-filter="conference">Conference Papers</button>
+    <button class="lumina-filter-tab" data-filter="preprint">Preprints</button>
   </div>
-  <div class="lumina-pub-author">{{ paper.author }}</div>
-  <div class="lumina-pub-source"><em>{{ paper.source }}</em></div>
-  {% if paper.remark %}
-  <div class="lumina-pub-source"><em>Remark: {{ paper.remark }}</em></div>
-  {% endif %}
-  <div class="lumina-pub-links">
-    {% if paper.html %}
-    <a href="{{ paper.html }}" class="lumina-btn lumina-btn-outline" target="_blank" aria-label="Paper link">
-      <i class="fas fa-external-link-alt"></i> Paper
-    </a>
-    {% endif %}
-    {% if paper.pdf %}
-    {% if paper.pdf contains '://' %}
-    <a href="{{ paper.pdf }}" class="lumina-btn" target="_blank" aria-label="PDF">
-      <i class="fas fa-file-pdf"></i> PDF
-    </a>
-    {% else %}
-    <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="lumina-btn" target="_blank" aria-label="PDF">
-      <i class="fas fa-file-pdf"></i> PDF
-    </a>
-    {% endif %}
-    {% endif %}
-  </div>
-</div>
-{% endfor %}
-{% endif %}
 
-<!-- Conference Publications -->
-{% assign conferences = site.data.publist | where: "type", "conference" %}
-{% if conferences.size > 0 %}
-<h2 class="lumina-section-title">Conference Papers</h2>
-{% for paper in conferences %}
-<div class="lumina-publication">
-  <div class="lumina-pub-title">
-    {% if paper.html %}
-    <a href="{{ paper.html }}" target="_blank">{{ paper.title }}</a>
-    {% else %}
-    {{ paper.title }}
-    {% endif %}
-  </div>
-  <div class="lumina-pub-author">{{ paper.author }}</div>
-  <div class="lumina-pub-source"><em>{{ paper.source }}</em></div>
-  {% if paper.remark %}
-  <div class="lumina-pub-source"><em>Remark: {{ paper.remark }}</em></div>
-  {% endif %}
-  <div class="lumina-pub-links">
-    {% if paper.html %}
-    <a href="{{ paper.html }}" class="lumina-btn lumina-btn-outline" target="_blank" aria-label="Paper link">
-      <i class="fas fa-external-link-alt"></i> Paper
-    </a>
-    {% endif %}
-    {% if paper.pdf %}
-    {% if paper.pdf contains '://' %}
-    <a href="{{ paper.pdf }}" class="lumina-btn" target="_blank" aria-label="PDF">
-      <i class="fas fa-file-pdf"></i> PDF
-    </a>
-    {% else %}
-    <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="lumina-btn" target="_blank" aria-label="PDF">
-      <i class="fas fa-file-pdf"></i> PDF
-    </a>
-    {% endif %}
-    {% endif %}
-  </div>
+  <!-- Timeline will be rendered by JavaScript -->
+  <div id="lumina-timeline" class="lumina-timeline"></div>
 </div>
-{% endfor %}
-{% endif %}
 
-<!-- Patents -->
-{% assign patents = site.data.publist | where: "type", "patent" %}
-{% if patents.size > 0 %}
-<h2 class="lumina-section-title">Patents</h2>
-{% for paper in patents %}
-<div class="lumina-publication">
-  <div class="lumina-pub-title">
-    {% if paper.html %}
-    <a href="{{ paper.html }}" target="_blank">{{ paper.title }}</a>
-    {% else %}
-    {{ paper.title }}
+<script>
+// Publications data from Jekyll
+const publicationsData = [
+  {% for paper in site.data.publist %}
+    {% if paper.title and paper.title != "null" %}
+  {
+    title: {{ paper.title | jsonify }},
+    author: {{ paper.author | jsonify }},
+    source: {{ paper.source | jsonify }},
+    type: {{ paper.type | default: 'journal' | jsonify }},
+    html: {{ paper.html | jsonify }},
+    pdf: {{ paper.pdf | jsonify }},
+    remark: {{ paper.remark | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
     {% endif %}
-  </div>
-  <div class="lumina-pub-author">{{ paper.author }}</div>
-  <div class="lumina-pub-source"><em>{{ paper.source }}</em></div>
-  {% if paper.remark %}
-  <div class="lumina-pub-source"><em>Remark: {{ paper.remark }}</em></div>
-  {% endif %}
-  <div class="lumina-pub-links">
-    {% if paper.html %}
-    <a href="{{ paper.html }}" class="lumina-btn lumina-btn-outline" target="_blank" aria-label="Paper link">
-      <i class="fas fa-external-link-alt"></i> Patent
-    </a>
-    {% endif %}
-    {% if paper.pdf %}
-    {% if paper.pdf contains '://' %}
-    <a href="{{ paper.pdf }}" class="lumina-btn" target="_blank" aria-label="PDF">
-      <i class="fas fa-file-pdf"></i> PDF
-    </a>
-    {% else %}
-    <a href="{{ paper.pdf | prepend: '/assets/pdf/' | relative_url }}" class="lumina-btn" target="_blank" aria-label="PDF">
-      <i class="fas fa-file-pdf"></i> PDF
-    </a>
-    {% endif %}
-    {% endif %}
-  </div>
-</div>
-{% endfor %}
-{% endif %}
+  {% endfor %}
+];
+
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.getElementById('lumina-timeline');
+  const filterTabs = document.querySelectorAll('.lumina-filter-tab');
+
+  // Extract year from source
+  function extractYear(source) {
+    if (!source) return null;
+    // Use multiple patterns to accurately extract year, avoiding page numbers
+    // Priority: comma separator -> month name -> standalone year (not followed by number)
+    const patterns = [
+      /,\s*(20\d{2})\b/,           // ", 2021" (comma followed by year)
+      /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s*(20\d{2})\b/i,  // "Sept. 2018"
+      /\b(20\d{2})\b(?![\s\-]*\d)/ // Year not followed by number (avoids page ranges)
+    ];
+
+    for (const pattern of patterns) {
+      const match = source.match(pattern);
+      if (match) return match[1] || match[0];
+    }
+    return null;
+  }
+
+  // Group publications by year
+  function groupByYear(pubs) {
+    const grouped = {};
+    pubs.forEach(pub => {
+      const year = extractYear(pub.source) || 'Unknown';
+      if (!grouped[year]) {
+        grouped[year] = [];
+      }
+      grouped[year].push(pub);
+    });
+    return grouped;
+  }
+
+  // Sort years in descending order
+  function getSortedYears(grouped) {
+    return Object.keys(grouped).sort((a, b) => {
+      if (a === 'Unknown') return 1;
+      if (b === 'Unknown') return -1;
+      return b - a;
+    });
+  }
+
+  // Render publication card
+  function renderPubCard(pub) {
+    const titleHtml = pub.html
+      ? `<a href="${pub.html}" target="_blank">${pub.title}</a>`
+      : pub.title;
+
+    const actions = [];
+    if (pub.html) {
+      actions.push(`<a href="${pub.html}" class="lumina-pub-action-btn" target="_blank"><i class="fas fa-file-alt" style="width: 14px;"></i> Paper</a>`);
+    }
+    if (pub.pdf && pub.pdf !== '' && pub.pdf !== 'null') {
+      actions.push(`<a href="${pub.pdf}" class="lumina-pub-action-btn" target="_blank"><i class="fas fa-file-pdf" style="width: 14px;"></i> PDF</a>`);
+    }
+
+    return `
+      <div class="lumina-timeline-item" data-type="${pub.type}">
+        <div class="lumina-timeline-dot"></div>
+        <div class="lumina-pub-card">
+          <h4 class="lumina-pub-card-title">${titleHtml}</h4>
+          <p class="lumina-pub-card-authors">${pub.author}</p>
+          <p class="lumina-pub-card-venue">${pub.source}</p>
+          ${pub.remark ? `<p class="lumina-pub-card-venue">${pub.remark}</p>` : ''}
+          ${actions.length ? `<div class="lumina-pub-actions">${actions.join('')}</div>` : ''}
+        </div>
+      </div>
+    `;
+  }
+
+  // Render timeline
+  function renderTimeline(filter = 'all') {
+    const filteredPubs = filter === 'all'
+      ? publicationsData
+      : publicationsData.filter(p => p.type === filter);
+
+    const grouped = groupByYear(filteredPubs);
+    const sortedYears = getSortedYears(grouped);
+
+    if (sortedYears.length === 0) {
+      container.innerHTML = '<p style="text-align: center; color: #64748b; padding: 2rem;">No publications found.</p>';
+      return;
+    }
+
+    let html = '';
+    sortedYears.forEach(year => {
+      html += `
+        <div class="lumina-timeline-year">
+          <div class="lumina-year-header">
+            <h3 class="lumina-year-title">${year}</h3>
+          </div>
+          <div class="lumina-timeline-content">
+            ${grouped[year].map(renderPubCard).join('')}
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+  }
+
+  // Filter tabs functionality
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      const filter = this.dataset.filter;
+
+      // Update active tab
+      filterTabs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+
+      // Re-render timeline with filter
+      renderTimeline(filter);
+    });
+  });
+
+  // Initial render
+  renderTimeline('all');
+});
+</script>
 
 {% else %}
 <!-- Original Dumbarton Publications Layout -->
