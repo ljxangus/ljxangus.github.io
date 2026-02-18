@@ -149,17 +149,16 @@ permalink: projects.html
     font-size: 0.75rem;
     font-weight: 500;
     padding: 0.375rem 0.75rem;
-    background: #f1f5f9;
-    color: #64748b;
+    background: #ccfbf1;
+    color: #0f766e;
     border-radius: 1rem;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #99f6e4;
     transition: all 0.2s ease;
   }
 
   .lumina-project-card:hover .lumina-tech-tag {
-    background: #ccfbf1;
-    color: #0f766e;
-    border-color: #99f6e4;
+    background: #99f6e4;
+    border-color: #5eead4;
   }
 
   /* Empty State */
@@ -191,7 +190,7 @@ permalink: projects.html
   <div class="lumina-project-card">
     {% comment %}Check if project detail page exists by checking for common project IDs{% endcomment %}
     {% assign has_detail_page = false %}
-    {% if project.id == 'sc2' or project.id == 'rtts-sdr' or project.id == 'nc-uav' or project.id == 'tdma-sdr' or project.id == 'pnc-decoder' or project.id == 'rofa' %}
+    {% if project.id == 'sc2' or project.id == 'rtts-sdr' or project.id == 'nc-uav' or project.id == 'tdma-sdr' or project.id == 'pnc-decoder' or project.id == 'rofa' or project.id == 'toward-optimal-broad' or project.id == 'blender-toward-pract' or project.id == 'software-defined-rad' %}
       {% assign has_detail_page = true %}
     {% endif %}
 
