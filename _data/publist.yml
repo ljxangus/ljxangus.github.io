@@ -1,4 +1,4 @@
-- author: H. Pan, <b>J. Liang</b>, S. C. Liew, V. C. M. Leung and J. Li
+- author: H. Pan, <em><b>J. Liang</b></em>, S. C. Liew, V. C. M. Leung and J. Li
   title: Timely Information Update With Nonorthogonal Multiple Access
   source: IEEE Transactions on Industrial Informatics <b>(TII)</b>, vol. 17, no. 6,
     pp. 4096-4106, June 2021
@@ -8,7 +8,7 @@
   showFront: false
 - title: Design and implementation of time-sensitive wireless IoT networks on software-defined
     radio
-  author: J Liang, H Chen, SC Liew
+  author: <em><b>J. Liang</b></em>, H Chen, SC Liew
   source: 'IEEE Internet of Things Journal 9 (3), 2361-2374, 2021, '
   type: journal
   html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:5nxA0vEk-isC
@@ -17,13 +17,13 @@
 - title: 'ROFA: An OFDMA system for Ultra-Reliable Wireless Industrial Networking'
   author: <em><b>J. Liang</b></em>, and S. C. Liew
   source: arXiv preprint arXiv:2109.00979, submitted to IEEE Transactions on Mobile
-    Computing <b>(TMC)</b>
+    Computing <b>(TMC)</b>, Sep 2021
   type: journal
   pdf: https://arxiv.org/pdf/2109.00979
   html: https://arxiv.org/abs/2109.00979
   showFront: false
 - title: Network-coded multiple access on unmanned aerial vehicle
-  author: H. Pan, S.C. Liew, <b>J. Liang</b>, Y. Shao, L. Lu
+  author: H. Pan, S.C. Liew, <em><b>J. Liang</b></em>, Y. Shao, L. Lu
   source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol. 36,
     no. 9, pp. 2071-2086, Sept. 2018
   type: journal
@@ -31,7 +31,7 @@
   html: https://ieeexplore.ieee.org/abstract/document/8432498/
   showFront: false
 - title: Toward optimal broadcast mode in offline finding network
-  author: T Li, Y Ding, J Liang, K Zheng, X Zhang, T Pan, D Wang, K Xu
+  author: T Li, Y Ding, <em><b>J. Liang</b></em>, K Zheng, X Zhang, T Pan, D Wang, K Xu
   source: 'IEEE Transactions on Mobile Computing, 2025, '
   type: journal
   html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:dhFuZR0502QC
@@ -65,7 +65,7 @@
   remark: '* Corresponding author'
 - title: 'Age of information in multichannel Slotted ALOHA: Should collided users
     send first?'
-  author: Y Lai, TT Chan, J Liang, H Pan
+  author: Y Lai, TT Chan, <em><b>J. Liang</b></em>, H Pan
   source: '2023 IEEE 13th Annual Computing and Communication Workshop and Conference …,
     2023, '
   type: conference
@@ -95,14 +95,14 @@
   html: https://ieeexplore.ieee.org/abstract/document/9700575/
   showFront: false
 - title: Age of information in SIC-based non-orthogonal multiple access
-  author: Q Ren, TT Chan, J Liang, H Pan
+  author: Q Ren, TT Chan, <em><b>J. Liang</b></em>, H Pan
   source: '2022 IEEE Wireless Communications and Networking Conference (WCNC), 800-805,
     2022, '
   type: conference
   html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:aqlVkmm33-oC
   pdf: ''
   showFront: false
-- author: <b>J. Liang</b>, H. Chen and S. C. Liew
+- author: <em><b>J. Liang</b></em>, H. Chen and S. C. Liew
   title: Design and Implementation ofTime-Sensitive Wireless IoT Networks on Software-Defined
     Radio
   source: IEEE Internet of Things Journal <b>(IoTJ)</b>, July 2021 (early access)
@@ -110,7 +110,7 @@
   pdf: https://arxiv.org/pdf/2006.09970
   html: https://ieeexplore.ieee.org/document/9480604
   showFront: true
-- author: <b>J. Liang</b>, H. Pan and S. C. Liew
+- author: <em><b>J. Liang</b></em>, H. Pan and S. C. Liew
   title: Is Multichannel Access Useful for Timely Information Update?
   source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 4, pp. 815-819,
     April 2021
@@ -118,7 +118,7 @@
   pdf: https://arxiv.org/pdf/2007.12136
   html: https://ieeexplore.ieee.org/abstract/document/9296962/
   showFront: false
-- author: H. Pan, <b>J. Liang</b> and S. C. Liew
+- author: H. Pan, <em><b>J. Liang</b></em> and S. C. Liew
   title: Practical NOMA-Based Coordinated Direct and Relay Transmission
   source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, no. 1, pp. 170-174,
     Jan. 2021
@@ -126,14 +126,14 @@
   pdf: null
   html: https://ieeexplore.ieee.org/abstract/document/9200657/
   showFront: false
-- author: Y. Shao, S. C. Liew and <b>J. Liang</b>
+- author: Y. Shao, S. C. Liew and <em><b>J. Liang</b></em>
   title: Sporadic Ultra-Time-Critical Crowd Messaging in V2X
   source: IEEE Transactions on Communications <b>(TCom)</b>, vol. 69, no. 2, pp. 817-830,
     Feb. 2021
   type: journal
   pdf: https://arxiv.org/pdf/2003.01906
   html: https://ieeexplore.ieee.org/abstract/document/9257442/
-- author: Z. Han*, <b>J. Liang</b>*, Y. Gu and H. Chen
+- author: Z. Han*, <em><b>J. Liang</b></em>*, Y. Gu and H. Chen
   title: Software-Defined Radio Implementation of Age-of-Information-Oriented Random
     Access
   source: 2020 The 46th Annual Conference of the IEEE Industrial Electronics Society
@@ -143,7 +143,7 @@
   pdf: https://arxiv.org/pdf/2003.14329
   html: https://ieeexplore.ieee.org/abstract/document/9254614/
   showFront: false
-- author: Y. Shao, S. C. Liew and <b>J. Liang</b>
+- author: Y. Shao, S. C. Liew and <em><b>J. Liang</b></em>
   title: Sporadic Ultra-Time-Critical Messaging in V2X
   source: 2018 IEEE International Conference on Communications <b>(ICC)</b>, 2018,
     pp. 1-7.
@@ -151,7 +151,7 @@
   pdf: null
   html: https://ieeexplore.ieee.org/abstract/document/8422978/
   showFront: false
-- author: R. Y. Chan, C. K. Chan, M. Tahernia, <b>J. Liang</b> and Q. Cao,
+- author: R. Y. Chan, C. K. Chan, M. Tahernia, <em><b>J. Liang</b></em> and Q. Cao,
   title: 'Engineering Education for Sustainable Development and Global Citizenship:
     A Course-level Implementation Case in Hong Kong'
   source: 2018 ASEE Annual Conference and Exposition.
@@ -160,13 +160,13 @@
   html: https://peer.asee.org/engineering-education-for-sustainable-development-and-global-citizenship-a-course-level-implementation-case-in-hong-kong
   showFront: false
 - title: Sporadic ultra-time-critical messaging in V2X
-  author: Y Shao, SC Liew, J Liang
+  author: Y Shao, SC Liew, <em><b>J. Liang</b></em>
   source: '2018 IEEE International Conference on Communications (ICC), 1-7, 2018, '
   type: conference
   html: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Kh6IvcMAAAAJ&citation_for_view=Kh6IvcMAAAAJ:_FxGoFyzp5QC
   pdf: ''
   showFront: false
-- author: R. Y. Chan, C. K. Chan, C. Lau, <b>J. Liang</b>, H. Huang, Q. Cao and M.
+- author: R. Y. Chan, C. K. Chan, C. Lau, <em><b>J. Liang</b></em>, H. Huang, Q. Cao and M.
     Tahernia
   title: 'Direct evidence of engineering students'' generic skills learning: From
     research to practice in an undergraduate course in information engineering'
@@ -175,7 +175,7 @@
   pdf: null
   html: https://ieeexplore.ieee.org/abstract/document/8190634/
   showFront: false
-- author: H. Pan, S. C. Liew, <b>J. Liang</b>, V. C. M. Leung and J. Li
+- author: H. Pan, S. C. Liew, <em><b>J. Liang</b></em>, V. C. M. Leung and J. Li
   title: Coding of Multi-Source Information Streams With Age of Information Requirements
   source: IEEE Journal on Selected Areas in Communications <b>(JSAC)</b>, vol. 39,
     no. 5, pp. 1427-1440, May 2021
@@ -186,14 +186,14 @@
 - title: 'Blender: Toward Practical Simulation Framework for BLE Neighbor Discovery'
   author: Y. Ding, T. Li, <em><b>J. Liang</b></em> and D. Wang
   source: Proceedings of the 25th International ACM Conference on Modeling Analysis
-    and Simulation of Wireless and Mobile Systems
+    and Simulation of Wireless and Mobile Systems, October 2022
   type: conference
   pdf: http://iir.ruc.edu.cn/~litong/papers/Blender_%20Toward%20Practical%20Simulation%20Framework%20for%20BLE%20Neighbor%20Discovery.pdf
   html: https://dl.acm.org/doi/abs/10.1145/3551659.3559052
   showFront: false
-- author: T. -T. Chan, H. Pan and <b>J. Liang</b>
+- author: T. -T. Chan, H. Pan and <em><b>J. Liang</b></em>
   title: Age of Information with Joint Packet Coding in Industrial IoT
-  source: IEEE Wireless Communications Letters <b>(WCL)</b> (early access)
+  source: IEEE Wireless Communications Letters <b>(WCL)</b>, vol. 10, November 2021
   type: journal
   pdf: null
   html: https://ieeexplore.ieee.org/abstract/document/9514592/

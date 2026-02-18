@@ -1,0 +1,315 @@
+---
+---
+{% assign theme = site.data.themes[site.ui_theme] %}
+
+{% if site.ui_theme == 'lumina' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% include head.html %}
+  <style>
+    .lumina-project-detail {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      animation: fadeIn 0.4s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .lumina-back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #64748b;
+      text-decoration: none;
+      font-size: 0.9375rem;
+      margin-bottom: 2rem;
+      transition: color 0.2s ease;
+    }
+
+    .lumina-back-link:hover {
+      color: #0f766e;
+    }
+
+    .lumina-project-detail-header {
+      margin-bottom: 3rem;
+    }
+
+    .lumina-project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .lumina-project-tag {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      background: #ccfbf1;
+      color: #0f766e;
+      border-radius: 2rem;
+      border: 1px solid #99f6e4;
+    }
+
+    .lumina-project-detail-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1e293b;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .lumina-project-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .lumina-project-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .lumina-project-btn-primary {
+      background: #0f766e;
+      color: white;
+    }
+
+    .lumina-project-btn-primary:hover {
+      background: #0d9488;
+    }
+
+    .lumina-project-btn-secondary {
+      background: white;
+      color: #475569;
+      border: 1px solid #cbd5e1;
+    }
+
+    .lumina-project-btn-secondary:hover {
+      background: #f8fafc;
+      border-color: #94a3b8;
+    }
+
+    .lumina-project-divider {
+      height: 1px;
+      background: #e2e8f0;
+      margin: 3rem 0;
+    }
+
+    .lumina-project-content {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: #334155;
+    }
+
+    .lumina-project-content h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .lumina-project-content h3 {
+      font-size: 1.375rem;
+      font-weight: 600;
+      color: #334155;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .lumina-project-content p {
+      margin-bottom: 1.25rem;
+    }
+
+    .lumina-project-content ul,
+    .lumina-project-content ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+    }
+
+    .lumina-project-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .lumina-project-content a {
+      color: #0f766e;
+      text-decoration: none;
+      border-bottom: 1px dashed #0f766e;
+    }
+
+    .lumina-project-content a:hover {
+      border-bottom-style: solid;
+    }
+
+    .lumina-project-content code {
+      background: #f1f5f9;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.875rem;
+    }
+
+    .lumina-project-content pre {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    .lumina-project-content pre code {
+      background: transparent;
+      padding: 0;
+    }
+
+    .lumina-project-content blockquote {
+      border-left: 4px solid #0f766e;
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      color: #64748b;
+      font-style: italic;
+    }
+
+    .lumina-project-image-container {
+      margin: 2rem 0;
+    }
+
+    .lumina-project-image-container img {
+      width: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .lumina-project-detail-title {
+        font-size: 2rem;
+      }
+
+      .lumina-project-actions {
+        flex-direction: column;
+      }
+
+      .lumina-project-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  {% include sidebar-nav.html %}
+
+  <div class="lumina-project-detail">
+    <a href="/projects.html" class="lumina-back-link">
+      <i class="fas fa-arrow-left"></i>
+      Back to Projects
+    </a>
+
+    <header class="lumina-project-detail-header">
+      {% if page.tech %}
+      <div class="lumina-project-tags">
+        {% for tech in page.tech %}
+        <span class="lumina-project-tag">{{ tech }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <h1 class="lumina-project-detail-title">{{ page.title }}</h1>
+
+      {% if page.link or page.github %}
+      <div class="lumina-project-actions">
+        {% if page.github %}
+        <a href="{{ page.github }}" class="lumina-project-btn lumina-project-btn-primary" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+          View Code
+        </a>
+        {% endif %}
+
+        {% if page.link %}
+        <a href="{{ page.link }}" class="lumina-project-btn lumina-project-btn-secondary" target="_blank" rel="noopener">
+          <i class="fas fa-external-link-alt"></i>
+          View Project
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </header>
+
+    <div class="lumina-project-divider"></div>
+
+    {% if page.image %}
+    <div class="lumina-project-image-container">
+      <img src="{{ page.image }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+
+    <article class="lumina-project-content">
+      {{ content }}
+    </article>
+  </div>
+
+  {% include footer.html %}
+</body>
+</html>
+
+{% else %}
+<!-- Original Dumbarton Project Detail Layout -->
+---
+layout: default
+---
+
+<div class="blogcard card-1 mb-4" style="width: 100%;">
+  <div class="card-body">
+    <h5 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-12">
+      {% if page.image %}
+      <img src="{{ page.image }}" class="img-fluid mb-4" alt="{{ page.title }}">
+      {% endif %}
+
+      {% if page.tech %}
+      <h6><mark><u>Keywords</u></mark></h6>
+      <div class="mb-4">
+        {% for tech in page.tech %}
+        <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="content">
+        {{ content }}
+      </div>
+
+      {% if page.link %}
+      <a href="{{ page.link }}" class="btn btn-primary mt-4" target="_blank">View Project</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
+{% endif %}

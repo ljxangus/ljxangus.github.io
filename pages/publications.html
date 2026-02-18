@@ -284,14 +284,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Use multiple patterns to accurately extract year, avoiding page numbers
     // Priority: comma separator -> month name -> standalone year (not followed by number)
     const patterns = [
-      /,\s*(20\d{2})\b/,           // ", 2021" (comma followed by year)
-      /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s*(20\d{2})\b/i,  // "Sept. 2018"
-      /\b(20\d{2})\b(?![\s\-]*\d)/ // Year not followed by number (avoids page ranges)
+      [/,\s*(20\d{2})\b/, 1],           // ", 2021" (comma followed by year) - return group 1
+      [/(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s*(20\d{2})\b/i, 2],  // "Sept. 2018" - return group 2 (year)
+      [/\b(20\d{2})\b(?![\s\-]*\d)/, 1] // Year not followed by number (avoids page ranges) - return group 1
     ];
 
-    for (const pattern of patterns) {
+    for (const [pattern, groupIndex] of patterns) {
       const match = source.match(pattern);
-      if (match) return match[1] || match[0];
+      if (match && match[groupIndex]) return match[groupIndex];
     }
     return null;
   }
