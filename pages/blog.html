@@ -19,8 +19,8 @@ description: Thoughts on technology, research, and random things
 
   /* Blog Article */
   .lumina-blog-article {
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -85,11 +85,12 @@ description: Thoughts on technology, research, and random things
     align-items: center;
     gap: 0.25rem;
     padding: 0.375rem 0.75rem;
-    background: #f1f5f9;
-    color: #64748b;
+    background: #ccfbf1;
+    color: #0f766e;
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 500;
+    border: 1px solid #99f6e4;
   }
 
   .lumina-blog-read-link {
@@ -164,9 +165,9 @@ description: Thoughts on technology, research, and random things
       {% if post.description %}
         {{ post.description }}
       {% elsif post.excerpt %}
-        {{ post.excerpt | strip_html | truncate: 200 }}
+        {{ post.excerpt | strip_html | truncate: 500 }}
       {% else %}
-        {{ post.content | strip_html | truncate: 200 }}
+        {{ post.content | strip_html | truncate: 500 }}
       {% endif %}
     </div>
 

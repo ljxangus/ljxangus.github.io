@@ -1,241 +1,418 @@
-<!-- PROJECT LOGO -->
-<p align="center">
-    <h1 align="center">Dumbarton</h1>
-    <p align="center">
-        A simple Jekyll theme for academics
-        <br />
-        <a href="#table-of-contents"><strong>Explore the docs »</strong></a>
-        <br />
-        <br />
-        <a href="https://dumbarton.netlify.app/">View Demo</a>
-        ·
-        <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/issues">Report Bug</a>
-        ·
-        <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/issues">Request Feature</a>
-        </p>
-</p>
+# Jiaxin's Academic Homepage
 
-<div align="center">
-    
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Netlify Status](https://api.netlify.com/api/v1/badges/24a6b9c4-6586-4e8d-8540-92942a0c47e8/deploy-status)](https://app.netlify.com/sites/admiring-bassi-e955ad/deploys)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-v4.5.3-blue) 
+A modern, responsive academic personal website built with [Jekyll](https://jekyllrb.com/) and the customized Lumina theme. Features automated publication updates from Google Scholar, project showcases, and a clean, professional design optimized for both desktop and mobile devices.
 
-</div>
+![Website Status](https://img.shields.io/badge/status-active-success)
+![Jekyll](https://img.shields.io/badge/Jekyll-4.3-red)
+![Theme](https://img.shields.io/badge/theme-Lumina-teal)
 
-[![Screenshot](https://raw.githubusercontent.com/tcbutler320/Jekyll-Theme-Dumbarton/dev/screenshot.png "Sample screenshot")](https://dumbarton.netlify.app/)
+## ✨ Main Features
 
-[![Screenshot2](https://raw.githubusercontent.com/tcbutler320/Jekyll-Theme-Dumbarton/dev/screenshot2.png "Sample screenshot")](https://dumbarton.netlify.app/)
+### 📚 Publications Management
+- **Automated Updates**: Python scripts automatically fetch publication data from Google Scholar
+- **AI-Powered Summaries**: Optional AI analysis generates keywords, summaries, and contributions
+- **Categorization**: Separate display for journal papers and conference papers
+- **Full-Text Links**: Direct links to PDF and publisher pages
+- **Highlight System**: Mark important publications for homepage display
 
-## Table of Contents
+### 🚀 Project Showcase
+- **Detail Pages**: In-depth project descriptions with images, tech tags, and links
+- **Grid Layout**: Responsive card-based grid layout for project browsing
+- **Categorization**: Projects organized by technology and application domain
+- **Interactive**: Click-through to dedicated project pages with full information
 
-- [Table of Contents](#table-of-contents)
-- [About](#about)
-- [Installation](#installation)
-- [Setting Options](#setting-options)
-  - [Base  Settings](#base--settings)
-  - [Site Settings](#site-settings)
-  - [Blog Settings](#blog-settings)
-  - [Theme Settings](#theme-settings)
-  - [Help Settings](#help-settings)
-  - [Jekyll Scholar Settings](#jekyll-scholar-settings)
-  - [CDN Settings](#cdn-settings)
-  - [Meta Tag Settings](#meta-tag-settings)
-  - [Favicon](#favicon)
-- [Thanks](#thanks)
-  - [Code](#code)
-  - [Images](#images)
+### 📝 Blog & News
+- **Markdown Posts**: Write blog posts in Markdown with automatic formatting
+- **News Timeline**: Chronological news and updates display
+- **Tag System**: Organize and filter content by tags
 
-## About 
+### 📱 Responsive Design
+- **Mobile-First**: Optimized for mobile devices with hamburger menu
+- **Touch-Friendly**: Large tap targets and smooth animations
+- **Adaptive Layout**: Sidebar navigation on desktop, slide-out menu on mobile
 
-Dumbarton is a Jekyll Theme developed by Tyler Butler. The theme is designed for academics and features a simple home page with an about me section, a blog, and an interactive highlights section to describe publications, coursework, courses taught, and projects. UI design with Bootstrap and Animate CSS.
+### 🎨 Customization
+- **Lumina Theme**: Modern, clean aesthetic with teal accent colors
+- **Flexible Configuration**: Easy customization via YAML files
+- **Navigation**: Customizable menu links and social media profiles
 
+## 🏗️ Site Structure
 
-**A Note on Compatability**
-
-_At this time, this theme is not compatible with GitHub pages because GitHub does not support jekyll-scholar._  
-
-## Installation   
-
-Follow the following instructions to install the Dumbarton theme: 
-
-1. Clone the repo.
-    ```bash
-    git clone https://github.com/tcbutler320/Jekyll-Theme-Dumbarton.git
-    cd Jekyll-Theme-Dumbarton
-    ```
-2. Use Bundler to install dependancies
-    ```bash
-    bundle install
-    ```
-3. Start the Jekyll development server
-    ```bash
-    bundle exec jekyll serve
-    ```
-
-## Setting Options  
-
-There are many settings available to users to change how the theme looks. These settings can be changed in `_config.yml`. It's important to note that unlike previewing changes in other areas of the site, you must stop and restart the development server in order to see changes made in the config file.  
-
-### Base  Settings 
-
-| Field  	| Description  	| Options  	|
-|---	|---	|---	|
-| `image`  	| Used in metatag as sites link preview  	|  https://example.com or /assets/path/to/image.png 	|
-
-### Site Settings 
-
-| Field  	| Description  	| Options  	|
-|---	|---	|---	|
-| `profile_image`  	|  Used on home page as authors profile image 	|  https://example.com or /assets/path/to/image.png  	|
-| social links, ex `twitter`  	|  Used to generate links in the nav and footer 	|  e.g. `twitter: tbutler0x90` 	|
-
-### Blog Settings 
-
-| Field 	| Description  	| Options  	|
-|---	|---	|---	|
-| `tags`  	|  Used to generate tags widget on blogs page, seperated by spaces  	| e.g. `tags:  post jekyll`  	|
-| `comments`   | Enable comments on blog posts using gitalk. **Not Currently Working**    |  `comments: false`   |
-
-### Theme Settings   
-
-
-**UI 2.0 Color Schemes 🌈**  
-The recent Dumbarton release supports Color Schemes! To pick a pre-configured color theme, change the `ui-theme` option in `_config.yml` . To create a new theme add a new entry in `_data/themes.yml`    
-
-```yml
-abyss:
-    name: abyss
-    nav-color: "#10292e"
-    nav-text: "#149f98"
-    title-font: "Noto Sans JP"
-    link-font: "#272343"
-    link-color: "#272343"
-    link-font: "Poppins"
-    font: "Poppins"
-    font-color: "Black"
-    social-color: "#CCCCCC"
-    footer-social-color: "Black"
-    button-color: "black"
-    home-highlight-background: "#10292e"
-    home-highlight-header-text: "#149f98"
-    education-title-font: "Noto Sans JP"
-    education-title-size: "18px"
-    education-entry-font: "Noto Sans JP"
-    education-entry-size: "18px"
-    education-section-size: "15px"
-    certification-title-font: "Noto Sans JP"
-    certification-title-size: "18px"
-    certification-entry-font: "Noto Sans JP"
-    certification-entry-size: "18px"
-    certification-section-size: "15px"
-    highlights-tab-color: "White"
-    projects-color: "Black"
-    border-style: ""
-    post-tag-size: "20px"
-    post-title-size: "36px"
-    post-author-size: "15px"
-    post-font-weight: "700"
-    default-button-color: ""
+```
+ljxangus.github.io/
+├── _config.yml              # Jekyll configuration
+├── _data/                   # Data files for site content
+│   ├── projects.yml         # Project showcase data
+│   ├── publist.yml          # Publication list
+│   ├── news.yml             # News and updates
+│   ├── nav.yml              # Navigation menu
+│   └── themes.yml           # UI theme configurations
+├── _includes/               # Reusable HTML components
+│   ├── head.html            # HTML head (meta tags, styles)
+│   ├── footer.html          # Site footer
+│   └── sidebar-nav.html     # Sidebar navigation
+├── _layouts/                # Page layout templates
+│   ├── default.html         # Default layout
+│   ├── home.html            # Homepage layout
+│   ├── page.html            # Static page layout
+│   ├── post.html            # Blog post layout
+│   └── project-detail.html  # Project detail page layout
+├── _posts/                  # Blog posts and project details
+│   ├── projects/            # Individual project detail pages
+│   └── *.md                 # Blog posts
+├── _sass/                   # SCSS source files
+│   └── lumina.scss          # Lumina theme styles
+├── assets/                  # Static assets
+│   ├── img/                 # Images
+│   │   ├── projects/        # Project images
+│   │   └── icons/           # Icons and favicons
+│   └── pdf/                 # Research papers and documents
+├── pages/                   # Standalone pages
+│   ├── index.html           # Homepage
+│   ├── blog.html            # Blog listing
+│   ├── publications.html    # Publications page
+│   ├── projects.html        # Projects showcase
+│   └── news.html            # News archive
+├── css/                     # Compiled CSS
+│   └── main.css             # Main stylesheet
+├── scripts/                 # Python utility scripts
+│   └── update_publications.py  # Publication updater
+└── README.md                # This file
 ```
 
+## 🛠️ Tech Stack
 
+### Core Technologies
+- **Jekyll 4.3**: Static site generator
+- **Ruby 2.7+**: Backend language
+- **Liquid**: Template engine
+- **Markdown**: Content authoring
+- **SCSS**: Styling with variables and nesting
 
+### Frontend
+- **Bootstrap 4.6**: Responsive framework
+- **Font Awesome 6.4**: Icon library
+- **Google Fonts**: Typography (Playfair Display, Inter)
+- **Animate.css**: CSS animations
 
-| Field  	| Description  	| Options  	|
-|---	|---	|---	|
-|  `nav-dIcon` 	|  Used as the nav bar drop down icon on mobile or small screen view 	| Select any fontawesome icon, e.g. `"fas fa-caret-down"`  	|
-|  `animate` 	| When enabled, home page animations will be turned on and used upon first loading the page  	| e.g. `true`, `false`  	|
-|  `home_option` 	| Used to change the section below the 'about me' on the home page. **Note that only option `education` is currently working**  	|  e.g. `education` 	|
+### Backend Automation
+- **Python 3.7+**: Update scripts
+- **BeautifulSoup4**: Web scraping
+- **Requests**: HTTP library
+- **Silicon Flow API**: AI-powered summaries (optional)
 
-### Help Settings 
+### Deployment
+- **GitHub Pages**: Hosting platform
+- **Git**: Version control
 
-| Field  	| Description  	| Options  	|
-|---	|---	|---	|
-| `help_tips`  	|  Used for demo purposes only. When enabled, a popup occurs on the homepage detailing information about the theme 	|  e.g. `true`, `false` |
+## 🚀 Quick Start
 
-### Jekyll Scholar Settings 
+### Prerequisites
 
-_Excerpt from [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar)_
+- **Ruby**: Version 2.5 or higher
+- **Bundler**: Ruby dependency manager
+- **Python 3.7+**: For update scripts (optional)
+- **Git**: Version control
 
-> Jekyll-Scholar is for all the academic bloggers out there. It is a set of extensions to Jekyll, the awesome, blog aware, static site generator; it formats your bibliographies and reading lists for the web and gives your blog posts citation super-powers.
+### Installation
 
-The [Jekyll Scholar](https://github.com/inukshuk/jekyll-scholar) plugin is used on the publications page and the home page publications highlight section. Refer to the [official documentation](https://github.com/inukshuk/jekyll-scholar) for setting options.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ljxangus/ljxangus.github.io.git
+   cd ljxangus.github.io
+   ```
 
-```yml
-scholar:
-  last_name: Dumbarton
-  style: apa
-  locale: en
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  replace_strings: true
-  join_strings: true
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: 
-  query: "@*"
-``` 
+2. **Install Ruby dependencies**:
+   ```bash
+   # macOS (avoid system Ruby permission issues)
+   bundle config set --local path 'vendor/bundle'
+   bundle install
+   ```
 
-### CDN Settings
+3. **Install Python dependencies** (optional, for automated updates):
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-| Field  	| Description  	| Options  	|
-|---	|---	|---	|
-|  font_awesome_id 	| Used to generate fontawesome icons in the navbar. Register free to get your id  at https://fontawesome.com/	| N/A  	|
+### Local Development
 
-### Meta Tag Settings  
+1. **Start the development server**:
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-Several meta tag settings are optional. Refer to [htmlhead.dev](https://htmlhead.dev/) for a full list of options and explanations for the below configurations.  
+2. **Open your browser**:
+   ```
+   http://localhost:4000
+   ```
 
-```yml
-google-site-verification:                         #<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
-yandex-verification:                              #<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
-msvalidate:                                       # meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
-alexaVerifyID:                                    # <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
-pinterestdomain_verify:                           #<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
-norton-safeweb:                                   # <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
-detectphone: yes                                  # yes or no. Disable automatic detection and formatting of possible phone numbers 
-x-dns-prefetch-control: on                        # on or off. Completely opt out of DNS prefetching by setting to "off"
-fbappid:                                          # Facebook OpenGraph 
-```  
+3. **Edit files and save** - Jekyll auto-regenerates the site
 
-### Favicon 
+### Build for Production
 
-Site favicons are located at `/assets/img/icons`. You can use a [Favicon Generator](https://realfavicongenerator.net/) to create a new set of icons using any image you'd like. Simply create a package from the aboved linked generator and replace the icons folder. 
+```bash
+# Build static site
+bundle exec jekyll build
 
-## Thanks 
+# Output is in _site/ directory
+```
 
-I borrowed concepts and assets from various other open source projects. A special thanks for everyone who contributed to Jekyll-Theme-Dumbarton. 
+## 📝 Content Management
 
-### Code
-- [Corey](https://codepen.io/Corsurath/pen/abbxNpj)
-  - Used as a concept for the blog layout v 2.0
-- [Masresha](https://codepen.io/masresha)
-    - [Decision Making App](https://codepen.io/masresha/pen/KyLrbK): Used as a concept for the blog layout v 1.0
-    - 
+### Adding Publications
 
-### Images
+**Option 1: Automated (Recommended)**
+```bash
+python scripts/update_publications.py
+```
 
-Special thanks to the following individuals for their images  
+**Option 2: Manual**
+Edit `_data/publist.yml`:
+```yaml
+- title: "Your Paper Title"
+  author: Your Name, Coauthor Name
+  source: Journal Name, Volume (Year)
+  type: journal
+  pdf: /path/to/paper.pdf
+  html: https://doi.org/...
+  showFront: true  # Highlight on homepage
+```
 
-- [Cole Keister](https://unsplash.com/@coleito)
+### Adding Projects
 
+1. **Add project data** to `_data/projects.yml`:
+   ```yaml
+   - name: "Project Name"
+     id: project-id
+     description: "Brief description..."
+     link: https://project-url.com
+     image: /assets/img/projects/project.png
+     tech:
+       - Technology 1
+       - Technology 2
+   ```
 
-<!-- MARKDOWN LINKS AND IMAGES --->
+2. **Create detail page** `_posts/projects/YYYY-MM-DD-project-id.md`:
+   ```yaml
+   ---
+   layout: project-detail
+   title: Project Title
+   id: project-id
+   permalink: /projects/project-id.html
+   image: /assets/img/projects/project.png
+   tech:
+     - Tech 1
+     - Tech 2
+   categories: projects
+   date: YYYY-MM-DD
+   ---
 
-[contributors-shield]: https://img.shields.io/github/contributors/tcbutler320/Jekyll-Theme-Dumbarton.svg?style=flat-square
-[contributors-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/tcbutler320/Jekyll-Theme-Dumbarton.svg?style=flat-square
-[forks-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/network/members
-[stars-shield]: https://img.shields.io/github/stars/tcbutler320/Jekyll-Theme-Dumbartonsvg?style=flat-square
-[stars-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/stargazers
-[issues-shield]: https://img.shields.io/github/issues/tcbutler320/Jekyll-Theme-Dumbarton.svg?style=flat-square
-[issues-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/issues
-[license-shield]: https://img.shields.io/github/license/tcbutler320Jekyll-Theme-Dumbarton.svg?style=flat-square
-[license-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/tyler-b-a700a1aa
+   ## Overview
+   Project description...
+   ```
+
+3. **Add to navigation** - Edit `pages/projects.html`:
+   ```html
+   {% if project.id == 'project-id' %}
+     {% assign has_detail_page = true %}
+   {% endif %}
+   ```
+
+### Adding Blog Posts
+
+Create `_posts/YYYY-MM-DD-post-title.md`:
+```yaml
+---
+layout: post
+title: "Post Title"
+date: YYYY-MM-DD
+categories: blog
+---
+
+Your post content in Markdown...
+```
+
+### Customizing Navigation
+
+Edit `_data/nav.yml`:
+```yaml
+links:
+  - title: Page Title
+    url: page.html
+    icon: fas fa-icon-name
+```
+
+## 🎨 Customization
+
+### Theme Settings
+
+Edit `_config.yml`:
+```yaml
+# Site information
+title: Your Name
+description: Your tagline
+author: Your Name
+
+# Theme selection
+ui_theme: lumina
+
+# Social links
+github: username
+linkedin: username
+email: email@example.com
+```
+
+### Styling
+
+Main styles: `_sass/lumina.scss`
+- Color variables at top of file
+- Mobile-responsive breakpoints at 768px
+- Component styles for cards, buttons, etc.
+
+Compiled CSS: `css/main.css`
+- Generated from SCSS
+- Direct edits allowed for quick changes
+
+### Layout Templates
+
+- `_layouts/default.html`: Base layout with sidebar
+- `_layouts/page.html`: Static pages
+- `_layouts/post.html`: Blog posts
+- `_layouts/project-detail.html`: Project details
+
+## 🚢 Deployment
+
+### GitHub Pages (Automatic)
+
+1. **Push to master branch**:
+   ```bash
+   git add .
+   git commit -m "Update site"
+   git push origin master
+   ```
+
+2. **GitHub Actions** automatically builds and deploys
+
+3. **Access your site**: `https://username.github.io`
+
+### Deployment Checklist
+
+- [ ] Test locally: `bundle exec jekyll serve`
+- [ ] Check for broken links
+- [ ] Verify YAML syntax in `_data/*.yml`
+- [ ] Update publications: `python scripts/update_publications.py`
+- [ ] Review `git status` before committing
+- [ ] Avoid committing `_site/` directory (auto-generated)
+
+## 📊 Automated Publication Updates
+
+### Configuration
+
+Edit `config.json`:
+```json
+{
+  "scholar_id": "your-google-scholar-id",
+  "api_key": "your-api-key",  // Optional, for AI features
+  "last_update": "timestamp"
+}
+```
+
+### Running Updates
+
+```bash
+# Full update with AI analysis
+python scripts/update_publications.py
+
+# Update without AI
+python scripts/update_publications.py --no-ai
+
+# Fetch only (don't update files)
+python scripts/update_publications.py -f
+```
+
+### What It Does
+
+1. Scrapes Google Scholar profile for publications
+2. Compares with existing `_data/publist.yml`
+3. Identifies new papers
+4. Generates AI summaries (optional)
+5. Creates project detail pages
+6. Updates `_data/projects.yml`
+7. Creates backups in `backups/`
+
+## 🐛 Troubleshooting
+
+### Jekyll Build Fails
+
+```bash
+# Clean build cache
+bundle exec jekyll clean
+
+# Rebuild
+bundle exec jekyll build --trace
+```
+
+### Port Already in Use
+
+```bash
+# Find process on port 4000
+lsof -i :4000
+
+# Kill process
+kill -9 <PID>
+```
+
+### Ruby Version Issues
+
+```bash
+# Check Ruby version
+ruby --version
+
+# Install correct version using rbenv
+rbenv install 2.7.0
+rbenv local 2.7.0
+```
+
+### GitHub Pages Build Errors
+
+- Check Ruby version in `Gemfile`
+- Review build logs in repository Settings > Pages
+- Test locally: `bundle exec jekyll build`
+
+## 📈 Maintenance
+
+### Regular Tasks
+
+- **Weekly**: Run `update_publications.py` for new papers
+- **Monthly**: Review and update project information
+- **Quarterly**: Check for broken links, update dependencies
+
+### Backup Strategy
+
+- Automatic backups created in `backups/` directory
+- Keeps last 7 days of data file backups
+- Git history provides full version control
+
+## 📧 Contact
+
+- **Website**: https://ljxangus.github.io
+- **Email**: jiax.l@outlook.com
+- **GitHub**: [@ljxangus](https://github.com/ljxangus)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- **Dumbarton Theme**: Original Jekyll theme by [Tyler Butler](https://tbutler.org)
+- **Lumina Theme**: Custom theme extension and modernization
+- **Font Awesome**: Icon library
+- **Bootstrap**: Responsive framework
+- **Jekyll**: Static site generator
+
+---
+
+**Last Updated**: February 2025
+
+**Built with**: Jekyll 4.3, Ruby 2.7, Python 3.9
