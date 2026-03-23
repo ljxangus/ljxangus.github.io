@@ -5,6 +5,7 @@ layout: default
 
 {% if site.ui_theme == 'lumina' %}
 <!-- Lumina Theme Post Layout -->
+<link rel="stylesheet" href="/assets/css/syntax-highlighting.css" />
 <style>
   .lumina-post-header {
     text-align: center;
@@ -127,27 +128,39 @@ layout: default
     font-style: italic;
   }
 
-  .lumina-post-content code {
-    background: rgba(15, 118, 110, 0.1);
-    color: #0f766e;
-    padding: 0.2rem 0.4rem;
-    border-radius: 0.25rem;
-    font-size: 0.9em;
-  }
-
   .lumina-post-content pre {
-    background: #1e293b;
-    color: #e2e8f0;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+    /* Don't set background for pre, it's handled by .highlighter-rouge */
     overflow-x: auto;
-    margin: 2rem 0;
   }
 
-  .lumina-post-content pre code {
+  /* Only override inline code styles (code elements that are NOT inside highlighter-rouge blocks) */
+  .lumina-post-content p > code,
+  .lumina-post-content li > code {
     background: none;
     color: inherit;
     padding: 0;
+  }
+
+  .lumina-post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+
+  .lumina-post-content th,
+  .lumina-post-content td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .lumina-post-content th {
+    font-weight: 600;
+    background: rgba(15, 118, 110, 0.05);
+  }
+
+  .lumina-post-content tr:last-child td {
+    border-bottom: none;
   }
 
   .lumina-post-footer {

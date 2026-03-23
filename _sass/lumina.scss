@@ -829,3 +829,29 @@ $lumina-sidebar-width-mobile: 20rem; // 320px for mobile drawer
 .lumina-fade-in {
     animation: fadeIn 0.5s ease forwards;
 }
+
+// ============================================
+// Blog Post Content Table Styles
+// ============================================
+
+.lumina-post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.lumina-post-content th,
+.lumina-post-content td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid $lumina-card-border;
+}
+
+.lumina-post-content th {
+    font-weight: 600;
+    background: rgba($lumina-accent, 0.05);
+}
+
+.lumina-post-content tr:last-child td {
+    border-bottom: none;
+}
