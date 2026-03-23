@@ -6,6 +6,34 @@ layout: default
 {% if site.ui_theme == 'lumina' %}
 <!-- Lumina Theme Post Layout -->
 <link rel="stylesheet" href="/assets/css/syntax-highlighting.css" />
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: 'default',
+    securityLevel: 'loose',
+  });
+
+  // Process mermaid code blocks after DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    const mermaidBlocks = document.querySelectorAll('code.language-mermaid');
+    mermaidBlocks.forEach((block, index) => {
+      const code = block.textContent;
+      const parent = block.parentElement;
+
+      // Create div for mermaid
+      const mermaidDiv = document.createElement('div');
+      mermaidDiv.className = 'mermaid';
+      mermaidDiv.textContent = code.trim();
+
+      // Replace the code block with mermaid div
+      parent.replaceWith(mermaidDiv);
+    });
+
+    // Run mermaid after all replacements
+    mermaid.run();
+  });
+</script>
 <style>
   .lumina-post-header {
     text-align: center;
@@ -195,6 +223,12 @@ layout: default
     .lumina-post-content {
       font-size: 1rem;
     }
+  }
+
+  .mermaid {
+    font-family: 'Inter', sans-serif;
+    margin: 2rem 0;
+    text-align: center;
   }
 </style>
 
