@@ -125,6 +125,13 @@ defaults:
       is_post: true # automatically set is_post=true for all posts
 
 # =======================================#
+# -----COLLECTIONS-----------------------#
+#========================================#
+collections:
+  learning:
+    output: false
+
+# =======================================#
 # -----JEKYLL SCHOLAR SETTINGS-----------#
 #========================================#
 scholar:
