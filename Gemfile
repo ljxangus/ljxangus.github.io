@@ -6,5 +6,5 @@ gem 'jekyll'                    #Needed since this is a theme for Jekyll
 gem 'jekyll-environment-variables'
 gem 'rouge'                    # Code syntax highlighting
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw], :install_if => Gem.win_platform?
-gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
+gem "wdm", "~> 0.2", :install_if => Gem.win_platform?
 gem "webrick", "~> 1.7", :install_if => Gem.win_platform?
