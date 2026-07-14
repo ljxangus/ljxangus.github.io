@@ -24,3 +24,7 @@ links:
 - title: News
   url: news.html
   icon: fas fa-newspaper
+
+- title: Learning
+  url: learning.html
+  icon: fas fa-graduation-cap
