@@ -60,7 +60,7 @@ Add a "Learning" page to the personal Jekyll site (`ljxangus.github.io`) that li
    title: "LLM 与 AI Infra 从 0 到 1"
    date: 2026-07-14
    description: "面向工程师的 LLM 与 AI 基础设施入门教材，覆盖 Transformer → 预训练 → 后训练 → 推理优化 → 部署架构 → 向量数据库 → Agent 全链路。"
-   external_url: "https://ljxangus.github.io/llm-0-to-1/"
+   external_url: "https://ljxangus.github.io/llm-ai-infra-0-to-1/"
    tag: LLM
    readTime: "1–2 周通读"
    ---
@@ -103,16 +103,16 @@ Final `_data/nav.yml` `links` list order:
 ### URLs
 
 - Learning page: `https://ljxangus.github.io/learning.html`
-- LLM AI Infra entry's external URL: `https://ljxangus.github.io/llm-0-to-1/`
+- LLM AI Infra entry's external URL: `https://ljxangus.github.io/llm-ai-infra-0-to-1/`
 
 ### External Deployment (out of scope for code changes in this repo)
 
 To make the external URL resolve, the user (separately) needs to:
 
-1. Create a new GitHub repo named exactly `llm-0-to-1` under the `ljxangus` account.
+1. Create a new GitHub repo named exactly `llm-ai-infra-0-to-1` under the `ljxangus` account.
 2. Push the contents of `C:\Users\User\Documents\LLM_0_to_1` into that repo (either source + GitHub Actions that runs `mkdocs build`, or just the pre-built `out/site/` output to a `docs/` folder or root).
 3. Enable GitHub Pages on that repo (Settings → Pages → Source: main branch /docs or root).
-4. Verify `https://ljxangus.github.io/llm-0-to-1/` serves the MkDocs index page.
+4. Verify `https://ljxangus.github.io/llm-ai-infra-0-to-1/` serves the MkDocs index page.
 
 This spec covers only changes to the `ljxangus.github.io` Jekyll repo.
 
@@ -131,7 +131,7 @@ After implementation, run and verify:
 3. Top nav shows a "Learning" item at the far right (after News).
 4. Clicking "Learning" loads `/learning.html`.
 5. `/learning.html` renders exactly one card: "LLM 与 AI Infra 从 0 到 1" with date 2026-07-14, the description excerpt, the "LLM" tag, and a "Read Article" link.
-6. The card's title link and "Read Article" link both point to `https://ljxangus.github.io/llm-0-to-1/` and open in a new tab (`target="_blank"`).
+6. The card's title link and "Read Article" link both point to `https://ljxangus.github.io/llm-ai-infra-0-to-1/` and open in a new tab (`target="_blank"`).
 7. Visual: card layout, fonts, colors, hover effects match the Blog page cards. Take a Playwright screenshot to confirm.
 8. (Deferred until external repo is deployed) the link target resolves and shows the MkDocs index page.
 

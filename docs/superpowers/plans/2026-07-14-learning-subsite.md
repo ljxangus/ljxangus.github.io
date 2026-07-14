@@ -152,7 +152,7 @@ Using the Write tool, create `_learning/llm-ai-infra-0-to-1.md` with this exact 
 title: "LLM 与 AI Infra 从 0 到 1"
 date: 2026-07-14
 description: "面向工程师的 LLM 与 AI 基础设施入门教材，覆盖 Transformer → 预训练 → 后训练 → 推理优化 → 部署架构 → 向量数据库 → Agent 全链路。"
-external_url: "https://ljxangus.github.io/llm-0-to-1/"
+external_url: "https://ljxangus.github.io/llm-ai-infra-0-to-1/"
 tag: LLM
 readTime: "1–2 周通读"
 ---
@@ -410,7 +410,7 @@ Then open `http://localhost:4000/learning.html` in a browser.
 Expected:
 - Page loads with the Lumina card layout.
 - One card is visible: title "LLM 与 AI Infra 从 0 到 1", date "July 14, 2026", tag "LLM", read time "1–2 周通读", description starting with "面向工程师的 LLM 与 AI 基础设施入门教材…".
-- Card title link `href` is `https://ljxangus.github.io/llm-0-to-1/` and has `target="_blank"`.
+- Card title link `href` is `https://ljxangus.github.io/llm-ai-infra-0-to-1/` and has `target="_blank"`.
 - "Read Article" link has the same `href` and `target="_blank"`.
 
 - [ ] **Step 4: Verify the top nav links correctly**
@@ -449,7 +449,7 @@ Expected: build exits 0; no errors. `_site/learning.html` exists.
 
 - [ ] **Step 2: Confirm `_site/learning.html` contains the expected content**
 
-Run a grep on `_site/learning.html` for `LLM 与 AI Infra 从 0 到 1` and `https://ljxangus.github.io/llm-0-to-1/`.
+Run a grep on `_site/learning.html` for `LLM 与 AI Infra 从 0 到 1` and `https://ljxangus.github.io/llm-ai-infra-0-to-1/`.
 
 Expected: both strings appear in the rendered HTML.
 
@@ -476,13 +476,13 @@ After GitHub Pages rebuild completes, visit `https://ljxangus.github.io/learning
 - One card visible with the LLM AI Infra entry.
 - Top nav has "Learning" at the far right.
 
-The "Read Article" link target (`https://ljxangus.github.io/llm-0-to-1/`) will NOT resolve yet — that's the separate out-of-scope task of deploying the LLM_0_to_1 repo. Note this in the completion report.
+The "Read Article" link target (`https://ljxangus.github.io/llm-ai-infra-0-to-1/`) will NOT resolve yet — that's the separate out-of-scope task of deploying the LLM_0_to_1 repo. Note this in the completion report.
 
 ---
 
 ## Out of Scope (Tracked in Spec, Not Implemented Here)
 
-- Creating the `ljxangus/llm-0-to-1` GitHub repo.
+- Creating the `ljxangus/llm-ai-infra-0-to-1` GitHub repo.
 - Pushing `C:\Users\User\Documents\LLM_0_to_1` contents to that repo.
 - Enabling GitHub Pages on that repo.
 
