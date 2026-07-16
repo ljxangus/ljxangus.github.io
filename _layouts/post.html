@@ -282,6 +282,8 @@ layout: default
   {{ content }}
 </div>
 
+<aside class="lumina-toc" id="luminaToc" aria-label="Table of contents" hidden></aside>
+
 <footer class="lumina-post-footer">
   <a href="/blog.html" class="lumina-back-link">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -291,6 +293,8 @@ layout: default
     Back to all posts
   </a>
 </footer>
+
+<script src="/assets/js/blog-toc.js" defer></script>
 
 {% else %}
 <!-- Original Dumbarton Post Layout -->
