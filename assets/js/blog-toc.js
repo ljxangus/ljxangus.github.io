@@ -101,13 +101,16 @@
     state.observer = observer;
   }
 
-  function setupClickHandler() {
+  function attachClickHandler() {
     var toc = document.getElementById('luminaToc');
     if (!toc) return;
 
     toc.addEventListener('click', function (e) {
       var target = e.target;
       if (!target || !target.classList || !target.classList.contains('lumina-toc-item')) {
+        return;
+      }
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) {
         return;
       }
       e.preventDefault();
@@ -152,7 +155,6 @@
     ensureIds(headings);
     buildToc(headings);
     setupActiveTracking(headings);
-    setupClickHandler();
 
     state.initialized = true;
   }
@@ -165,9 +167,13 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', function () {
+      init();
+      attachClickHandler();
+    });
   } else {
     init();
+    attachClickHandler();
   }
   window.addEventListener('resize', onResize);
 })();
