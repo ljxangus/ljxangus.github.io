@@ -115,6 +115,9 @@ exclude:
   - vendor/ruby/
   - README_FIRST.md
   - README.md
+  - docs/superpowers/
+  - package.json
+  - package-lock.json
 
 defaults:
   -
