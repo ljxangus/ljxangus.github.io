@@ -855,3 +855,84 @@ $lumina-sidebar-width-mobile: 20rem; // 320px for mobile drawer
 .lumina-post-content tr:last-child td {
     border-bottom: none;
 }
+
+// ============================================
+// Blog Post TOC (right-side navigation)
+// ============================================
+
+.lumina-toc {
+    position: fixed;
+    right: 1.5rem;
+    top: 1.5rem;
+    width: 240px;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    font-family: $lumina-font-body;
+    z-index: 900;
+
+    &[hidden] {
+        display: none;
+    }
+
+    @media (max-width: 1499px) {
+        display: none !important;
+    }
+}
+
+.lumina-toc-title {
+    font-family: $lumina-font-heading;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $lumina-text-muted;
+    margin-bottom: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+.lumina-toc-list {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid $lumina-card-border;
+    padding-left: 0;
+}
+
+.lumina-toc-item {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: $lumina-text-muted;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    margin-left: -2px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+
+    &:hover {
+        color: $lumina-accent;
+    }
+
+    &.active {
+        color: $lumina-accent;
+        border-left-color: $lumina-accent;
+        font-weight: 500;
+    }
+}
+
+.lumina-toc-item--level-3 {
+    padding-left: 1.5rem;
+    font-size: 0.75rem;
+}
+
+.lumina-toc::-webkit-scrollbar {
+    width: 4px;
+}
+
+.lumina-toc::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.lumina-toc::-webkit-scrollbar-thumb {
+    background: $lumina-card-border;
+    border-radius: 2px;
+}
