@@ -123,8 +123,12 @@
         top: top,
         behavior: 'smooth',
       });
-      if (window.history && window.history.replaceState) {
-        window.history.replaceState(null, '', '#' + id);
+      try {
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, '', '#' + id);
+        }
+      } catch (e) {
+        // Cross-origin replaceState (dev server with host alias mismatch) — silently skip
       }
     });
   }
