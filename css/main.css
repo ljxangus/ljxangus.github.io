@@ -816,7 +816,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1699px) {
+@media (max-width: 1499px) {
   .lumina-toc {
     display: none !important;
   }
@@ -880,12 +880,15 @@ body {
   border-radius: 2px;
 }
 
-/* When the right-side TOC is visible (viewport >= 1700px), left-align the
+/* When the right-side TOC is visible (viewport >= 1500px), left-align the
    content wrapper so the article sits next to the sidebar instead of being
    centered in the main area. This eliminates the large left gutter caused by
    double centering (wrapper centered in main, then post-content centered in
-   wrapper) and reserves the right gutter for the fixed TOC. */
-@media (min-width: 1700px) {
+   wrapper) and reserves the right gutter for the fixed TOC. The left-aligned
+   wrapper also prevents the overlap that previously occurred at 1500-1515px
+   when the wrapper was centered: article.right (1066px) is now well left of
+   toc.left (viewport - 264 = 1236px at 1500px viewport). */
+@media (min-width: 1500px) {
   .lumina-content-wrapper {
     margin-left: 0;
     margin-right: auto;

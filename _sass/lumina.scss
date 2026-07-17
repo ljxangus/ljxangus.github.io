@@ -874,7 +874,7 @@ $lumina-sidebar-width-mobile: 20rem; // 320px for mobile drawer
         display: none;
     }
 
-    @media (max-width: 1699px) {
+    @media (max-width: 1499px) {
         display: none !important;
     }
 }
@@ -942,7 +942,7 @@ $lumina-sidebar-width-mobile: 20rem; // 320px for mobile drawer
 // centered in the main area. This eliminates the large left gutter caused by
 // double centering (wrapper centered in main, then post-content centered in
 // wrapper) and reserves the right gutter for the fixed TOC.
-@media (min-width: 1700px) {
+@media (min-width: 1500px) {
     .lumina-content-wrapper {
         margin-left: 0;
         margin-right: auto;
