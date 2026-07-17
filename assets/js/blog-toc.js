@@ -5,7 +5,7 @@
     content: '.lumina-post-content',
     toc: '#luminaToc',
   };
-  var BREAKPOINT = 1500;
+  var BREAKPOINT = 1700;
   var SCROLL_OFFSET = 80;
   var RESIZE_DEBOUNCE_MS = 150;
 

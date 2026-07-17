@@ -7,6 +7,9 @@ _site
 Gemfile.lock
 .jekyll-metadata
 
+# Node
+node_modules/
+
 # Ruby/Bundler
 vendor/bundle/
 

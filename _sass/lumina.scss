@@ -874,7 +874,7 @@ $lumina-sidebar-width-mobile: 20rem; // 320px for mobile drawer
         display: none;
     }
 
-    @media (max-width: 1499px) {
+    @media (max-width: 1699px) {
         display: none !important;
     }
 }
@@ -935,4 +935,16 @@ $lumina-sidebar-width-mobile: 20rem; // 320px for mobile drawer
 .lumina-toc::-webkit-scrollbar-thumb {
     background: $lumina-card-border;
     border-radius: 2px;
+}
+
+// When the right-side TOC is visible (viewport >= 1700px), left-align the
+// content wrapper so the article sits next to the sidebar instead of being
+// centered in the main area. This eliminates the large left gutter caused by
+// double centering (wrapper centered in main, then post-content centered in
+// wrapper) and reserves the right gutter for the fixed TOC.
+@media (min-width: 1700px) {
+    .lumina-content-wrapper {
+        margin-left: 0;
+        margin-right: auto;
+    }
 }
