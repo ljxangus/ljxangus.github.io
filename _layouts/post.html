@@ -230,6 +230,28 @@ layout: default
     margin: 2rem 0;
     text-align: center;
   }
+
+  /* When the right-side TOC is visible (viewport >= 1500px), let the article
+     content fill the available width between the sidebar and the fixed TOC,
+     instead of being capped at 720px and leaving a large right-side gutter.
+     The TOC is 240px wide and offset 24px from the viewport's right edge, so
+     we reserve 296px of right padding (240 + 24 + 32 gap) on the wrapper and
+     let the post-content expand to fill the rest. Below 1500px the TOC is
+     hidden and the original centered 720px layout applies. */
+  @media (min-width: 1500px) {
+    .lumina-content-wrapper {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 296px;
+    }
+
+    .lumina-post-content {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 </style>
 
 <div class="lumina-post-header">
